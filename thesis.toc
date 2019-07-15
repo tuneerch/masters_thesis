@@ -1,0 +1,33 @@
+\thispagestyle {empty}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}What is global helioseismology?}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Frequency splittings in helioseismology}{1}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Quasi Degenerate Perturbation Theory}{1}{subsection.1.2.1}
+\contentsline {chapter}{\numberline {2}The Rotating Sun}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Differential Rotation}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Detection from frequency spectrum}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}QDPT Analysis}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Selecition rules in mode coupling}{6}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {3}Internal Magnetic Fields}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Solar Magnetic Field}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Equation of Motion}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Coupling Matrix}{10}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Lorentz Stress components}{10}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Sensitivity Kernels}{11}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Synthetic Magnetic Field}{12}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Construction of $\mathbf {B}$}{13}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Construction of $\mathcal {H}$}{14}{subsection.3.4.2}
+\contentsline {chapter}{\numberline {4}Results}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Frequency Splittings due to Differential Rotation}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Frequency splittings Due to Lorentz Stresses}{15}{section.4.2}
+\contentsline {chapter}{References}{17}{chapter*.6}
+\contentsline {chapter}{Appendix \numberline {A}Calculation of Differential Rotation Flow Sensitivity}{19}{Appendix.a.A}
+\contentsline {section}{\numberline {A.1}Formulation}{19}{section.a.A.1}
+\contentsline {section}{\numberline {A.2}Sensitivity Kernels}{19}{section.a.A.2}
+\contentsline {chapter}{Appendix \numberline {B}Lorentz Stress Sensitivity}{21}{Appendix.a.B}
+\contentsline {section}{\numberline {B.1}Sensitivity Kernels}{21}{section.a.B.1}
+\contentsline {chapter}{Appendix \numberline {C}Generalised Spherical Harmonics Formalism}{23}{Appendix.a.C}
+\contentsline {section}{\numberline {C.1}Formalism}{23}{section.a.C.1}
+\contentsline {section}{\numberline {C.2}Integrals}{23}{section.a.C.2}
+\contentsline {section}{\numberline {C.3}Conventions}{23}{section.a.C.3}
+\contentsline {chapter}{Appendix \numberline {D}Fourier Convention}{25}{Appendix.a.D}

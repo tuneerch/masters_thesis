@@ -1,0 +1,65 @@
+%!TEX root = ../thesis.tex
+%*******************************************************************************
+%*********************************** First Chapter *****************************
+%*******************************************************************************
+
+\chapter{Introduction}  %Title of the First Chapter
+
+\ifpdf
+    \graphicspath{{Chapter1/Figs/Raster/}{Chapter1/Figs/PDF/}{Chapter1/Figs/}}
+\else
+    \graphicspath{{Chapter1/Figs/Vector/}{Chapter1/Figs/}}
+\fi
+
+
+\section{What is global helioseismology?} %Section - 1.1 
+Seismology is the study of vibration of material in a body on the surface to deduce its internal structure.
+
+
+%\nomenclature[z-cif]{$CIF$}{Cauchy's Integral Formula}                                % first letter Z is for Acronyms 
+
+\section{Frequency splittings in helioseismology} %Section - 1.2
+
+The standard solar model assumed in this work is that of a spherically symmetric, non-rotating, non-magnetic, adiabatic, isotropic, and static (\snr). This \snr model admits wave like solutions in density perubations (and as a result, displacement, pressure, etc also) \cite{jcd_notes}. Normal modes are found to have a discrete spectrum of eigen-frequencies to the operator
+
+
+The essential idea which drives this work is that one can systematically deduce internal structure parameters, such as convective flow, differential rotation, magnetic fields etc by analysing the frequency splittings of solar acoustic resonant modes. 
+
+\subsection{Quasi Degenerate Perturbation Theory}
+
+Quasi-degenerate pertubation theory requires us to account for mixing of modes which lie in a small neighbourhood on the frequency spectrum, and hence satisfy the quasi-degenerate condition.
+
+\begin{equation}
+|\omega_k^2 - \omref^2| < \tau^2
+\end{equation}
+
+%\section{Theoretical formulations} \label{Sec: Theory}
+
+A general magnetohydrodynamic (MHD) description of the Sun using the MHD equations in its full vigour is rather cumbersome. Therefore, it is a standard practice (CITE RL91,92) to implement the degenerate perturbation theory in finding the changes in eigenfrequencies from the standard solar model. This model assume the sun to be spherically symmetric, non-rotating, non-magnetic and non-attenuating. The equation of motion (in fourier space) for such a model is given by \citep{jcd_notes} 
+
+\begin{equation} \label{eqn:sol_wave_eqn}
+\cL_0 \xiv = \rho \omega^2 \xiv  = - \grad (\rho c^2 \boldsymbol{\nabla} \cdot \boldsymbol{\xi} - \rho g \boldsymbol{\xi} \cdot \ev{r}) - g \ev{r} \boldsymbol{\nabla} \cdot (\rho \boldsymbol{\xi})
+\end{equation}
+
+where $\omega$ denotes the temporal frequency of oscillations, $c(r), g(r)$ and $\rho(r)$ are the radial functions of sounds speed, gravity and density. $\boldsymbol{\nabla}$ is the covariant spatial derivative operator. For all ensuing calculations and derivations we write equation \ref{eqn:sol_wave_eqn} in the form $\mathcal{L}_0 \boldsymbol{\xi} = \rho \omega^2 \boldsymbol{\xi}$ where the unperturbed wave operator $\mathcal{L}_0$ is self-adjoint (CITE SOMETHING?). Axi-symmetric or non-axisymmetric flows, rotations, asphericities, anisotropies and non-radial variations in $c, g, \rho$ can be captured as perturbation terms in equation \ref{eqn:sol_wave_eqn}. Although for the purpose of this study, we restrict ourselves to perturbations induced via presence of global scale magnetic fields only. 
+\\
+
+Because the solar eigenfunctions lack a toroidal component, we can denote the displacement field $\boldsymbol{\xi}(\boldsymbol{r},\omega)$ in the basis of spherical harmonics (and thereafter generalized spherical harmonics) as follows:
+
+\begin{eqnarray} \label{eqn: xi_exp}
+    \boldsymbol{\xi}(\boldsymbol{r}) &=& \sum_{k} U_{k}(r) Y_l^m(\theta,\phi) \ev{r}
+ + V_{k}(r) \boldsymbol{\nabla}_1 Y_l^m(\theta,\phi) \\
+     &=& \sum_{k} \xi_{k}^0(r) Y_{lm}^0(\theta,\phi) \ev{0} + \xi_{k}^-(r) Y_{lm}^-(\theta,\phi) \ev{-} + \xi_{k}^+(r) Y_{lm}^+(\theta,\phi) \ev{+}
+ \end{eqnarray}
+ 
+Here, $\boldsymbol{r} = (r,\theta,\phi)$ in spherical polar coordinate system with basis vectors $(\ev{r},\ev{\theta},\ev{\phi})$, $\grad_1 \equiv = \enc{\ev{\theta}\partial_{\theta} + \ev{\phi}\frac{1}{\sin\theta}\partial_{\phi} }$ and $k = (n,l,m)$ where $n$ is the radial order, $l$ is the angular degree and $m$ is the azimuthal order of the particular \snr mode.  These basis vectors are related to those in generalized spherical harmonics' basis as:
+ 
+ \begin{equation}
+     \begin{array}{ccc} \ev{-} = \frac{1}{\sqrt{2}}(\ev{\theta} - i \ev{\phi}), & \ev0 = \ev{r}, & \ev{+} = -\frac{1}{\sqrt{2}}(\ev{\theta} + i \ev{\phi}) \\ \end{array}
+ \end{equation}
+We work with normalised eigenfunctions $\boldsymbol{\xi}_k$ with the spherically symmetric background density $\rho(r)$ as the weight factor, which satisfy the orthonormality condition:
+
+\begin{equation} \label{eqn: orthonormality}
+  \inner{\xiv_{k'}}{\rho\xiv_{k}} = \delta_{n'n} \delta_{l' l} \delta_{m' m}  
+\end{equation}
+where the inner product \inner{}{} stands for $\inner{\Phi}{\Psi} \equiv \ints d^3\rvec \Phi^*(\rvec) \Psi(\rvec)$.

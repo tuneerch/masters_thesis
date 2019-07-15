@@ -1,0 +1,49 @@
+\begin{thebibliography}{}
+
+\bibitem[{Chakraborty} and Das, 2019]{GSH_repo}
+{Chakraborty}, T. and Das, S.~B. (2019).
+\newblock Mathematica package for generalised spherical harmonic manipulation.
+\newblock \url{https://github.com/tuneerch/LStress_Mathematica}.
+
+\bibitem[{Christensen--Dalsgaard}, 2003]{jcd_notes}
+{Christensen--Dalsgaard}, J. (2003).
+\newblock {\em Lecture Notes on Stellar Oscillations}.
+\newblock Fifth edition.
+
+\bibitem[{Goedbloed} and {Poedts}, 2004]{goedbloed2004}
+{Goedbloed}, J.~P.~H. and {Poedts}, S. (2004).
+\newblock {\em Principles of Magnetohydrodynamics: with Applications to
+  Laboratory and Astrophysical Plasmas}.
+\newblock Cambridge University Press.
+
+\bibitem[{Hanasoge}, 2017]{hanasoge17}
+{Hanasoge}, S.~M. (2017).
+\newblock {Seismic sensitivity of normal-mode coupling to Lorentz stresses in
+  the Sun}.
+\newblock {\em \mnras}, 470:2780--2790.
+
+\bibitem[{Lavely} and {Ritzwoller}, 1992]{lavely92}
+{Lavely}, E.~M. and {Ritzwoller}, M.~H. (1992).
+\newblock {The Effect of Global-Scale, Steady-State Convection and
+  Elastic-Gravitational Asphericities on Helioseismic Oscillations}.
+\newblock {\em Philosophical Transactions of the Royal Society of London Series
+  A}, 339:431--496.
+
+\bibitem[{Ritzwoller} and {Lavely}, 1991]{ritzwoller}
+{Ritzwoller}, M.~H. and {Lavely}, E.~M. (1991).
+\newblock {A unified approach to the helioseismic forward and inverse problems
+  of differential rotation}.
+\newblock {\em \apj}, 369:557--566.
+
+\bibitem[{Schou} et~al., 1998]{schou98}
+{Schou}, J., {Antia}, H.~M., {Basu}, S., {Bogart}, R.~S., {Bush}, R.~I.,
+  {Chitre}, S.~M., {Christensen-Dalsgaard}, J., {di Mauro}, M.~P.,
+  {Dziembowski}, W.~A., {Eff-Darwich}, A., {Gough}, D.~O., {Haber}, D.~A.,
+  {Hoeksema}, J.~T., {Howe}, R., {Korzennik}, S.~G., {Kosovichev}, A.~G.,
+  {Larsen}, R.~M., {Pijpers}, F.~P., {Scherrer}, P.~H., {Sekii}, T., {Tarbell},
+  T.~D., {Title}, A.~M., {Thompson}, M.~J., and {Toomre}, J. (1998).
+\newblock {Helioseismic Studies of Differential Rotation in the Solar Envelope
+  by the Solar Oscillations Investigation Using the Michelson Doppler Imager}.
+\newblock {\em \apj}, 505:390--417.
+
+\end{thebibliography}
