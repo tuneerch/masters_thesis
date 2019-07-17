@@ -1,0 +1,90 @@
+import timing
+import numpy as np
+import matplotlib.pyplot as plt
+import functions as fn
+from os import getcwd
+import get_kernels as gkerns
+
+kernclock = timing.stopclock()
+tstamp = kernclock.lap
+
+r = np.loadtxt('r.dat')
+start_ind = fn.nearest_index(r,0.95)
+end_ind = fn.nearest_index(r,1.)
+r = r[start_ind:end_ind+1]
+OM = np.loadtxt('OM.dat')
+
+n1,l1 = 4,3
+n2,l2 = 1,10
+n3,l3 = 0,20
+
+m = np.array([0])
+m_ = np.array([0])
+s = np.array([2])
+
+plot_fac = OM**2 * 1e12 * (4.*np.pi/3) * 1e-10 #unit = muHz^2 G^(-2) V_sol^(-1)
+
+#kern = gkerns.Hkernels(n1,l1,m,n1,l1,m,s,r)
+Bmm1, B0m1,B001, Bpm1,_,_ = np.array(gkerns.Hkernels(n1,l1,m,n1,l1,m,s,r).ret_kerns_axis_symm())*plot_fac
+Bmm2, B0m2,B002, Bpm2,_,_ = np.array(gkerns.Hkernels(n2,l2,m,n2,l2,m,s,r).ret_kerns_axis_symm())*plot_fac
+Bmm3, B0m3,B003, Bpm3,_,_ = np.array(gkerns.Hkernels(n3,l3,m,n3,l3,m,s,r).ret_kerns_axis_symm())*plot_fac
+tstamp('kernel calculation time')
+
+npts = 1000
+r_new = np.linspace(np.amin(r),np.amax(r),npts)
+r = r_new
+
+#Bmm *= plot_fac
+#B0m *= plot_fac
+#B00 *= plot_fac
+#Bpm *= plot_fac
+
+#plt.plot(r,Bpm[0,0],'r-',label = '$\mathcal{B}^{+-}$')
+#plt.plot(r,Bmm[0,0],'b-',label = '$\mathcal{B}^{--}$')
+#plt.plot(r,B0m[0,0],'k-',label = '$\mathcal{B}^{0-}$')
+#plt.plot(r,B00[0,0],'g-',label = '$\mathcal{B}^{00}$')
+#plt.grid(True)
+#plt.legend()
+#plt.xlabel('$r/R_{\odot}$')
+#plt.ylabel('$(\mu Hz^2 G^{-2}V_{\odot}^{-1})$')
+#plt.title('Kernels for n,l = (1,60), s = 22, m\'=m=0')
+
+plt.subplot(221)
+plt.plot(r,Bmm1[0,0], label = '('+str(n1)+','+str(l1)+')')
+plt.plot(r,Bmm2[0,0], label = '('+str(n2)+','+str(l2)+')')
+plt.plot(r,Bmm3[0,0], label = '('+str(n3)+','+str(l3)+')')
+plt.xlabel('$r/R_{odot}$')
+plt.legend()
+plt.grid(True)
+plt.title('$\mathcal{B}^{--}_{20}$ in $(\mu Hz^2 G^{-2}V_{\odot}^{-1})$')
+
+plt.subplot(222)
+plt.plot(r,B0m1[0,0], label = '('+str(n1)+','+str(l1)+')')
+plt.plot(r,B0m2[0,0], label = '('+str(n2)+','+str(l2)+')')
+plt.plot(r,B0m3[0,0], label = '('+str(n3)+','+str(l3)+')')
+plt.xlabel('$r/R_{odot}$')
+plt.legend()
+plt.grid(True)
+plt.title('$\mathcal{B}^{0-}_{20}$ in $(\mu Hz^2 G^{-2}V_{\odot}^{-1})$')
+
+plt.subplot(223)
+plt.plot(r,B001[0,0], label = '('+str(n1)+','+str(l1)+')')
+plt.plot(r,B002[0,0], label = '('+str(n2)+','+str(l2)+')')
+plt.plot(r,B003[0,0], label = '('+str(n3)+','+str(l3)+')')
+plt.xlabel('$r/R_{odot}$')
+plt.legend()
+plt.grid(True)
+plt.title('$\mathcal{B}^{00}_{20}$ in $(\mu Hz^2 G^{-2}V_{\odot}^{-1})$')
+
+plt.subplot(224)
+plt.plot(r,Bpm1[0,0], label = '('+str(n1)+','+str(l1)+')')
+plt.plot(r,Bpm2[0,0], label = '('+str(n2)+','+str(l2)+')')
+plt.plot(r,Bpm3[0,0], label = '('+str(n3)+','+str(l3)+')')
+plt.xlabel('$r/R_{odot}$')
+plt.legend()
+plt.grid(True)
+plt.title('$\mathcal{B}^{+-}_{20}$ in $(\mu Hz^2 G^{-2}V_{\odot}^{-1})$')
+
+plt.savefig('/home/tuneer/Desktop/helio_project/thesis/Chapter3/figs/kern2.pdf')
+
+plt.show()

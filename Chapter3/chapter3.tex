@@ -52,17 +52,18 @@ Using the Mathematica package developed for this work \cite{GSH_repo} which auto
 \end{dmath}
 
 \begin{dmath}
-2\cB_{st}^{0-} = \frac{(-1)^{m'}}{r^2}\gam{l}\gam{l'}\gam{s}\wigred{-m'}{t}{m} \enccrl{\wigred{0}{-1}{1}\om{l}{0}\encsqr{\enc{2U+{\om{l'}{2}}^2 V}U' +{\om{l'}{0}}^2 \enc{-2UV'-VV'+rV\dot{V}'} -r\enc{U+V-r\dot{V}'}\dot{U}'} - \wigred{1}{-1}{0}\om{l'}{0}\encsqr{(-2U+{\om{l}{0}}^2V)U' + {\om{l}{0}}^2V\enc{r\dot{V}'-V'} + U\enc{2V' + r (\dot{U}' - 2\dot{V}' + r\ddot{V}')}}  +\wigred{-1}{-1}{2}\om{l}{0}\om{l'}{0}\om{l}{2}V\encsqr{U'-V'+r\dot{V}'} + \wigred{2}{-1}{-1}\om{l}{0} \om{l'}{0} \om{l'}{2}\encsqr{V\enc{U'-3V'+r\dot{V}'}+2r\dot{V}V'}} 
+2\cB_{st}^{0-} = \frac{(-1)^{m'}}{r^2}\gam{l}\gam{l'}\gam{s}\wigred{-m'}{t}{m} \enccrl{\wigred{0}{-1}{1}\om{l}{0}\encsqr{\enc{2U+{\om{l'}{2}}^2 V}U' +{\om{l'}{0}}^2 \enc{-2UV'-VV'+rV\dot{V}'} -r\enc{U+V-r\dot{V}'}\dot{U}'} - \wigred{1}{-1}{0}\om{l'}{0}\encsqr{(-2U+{\om{l}{0}}^2V)U' + {\om{l}{0}}^2V\enc{r\dot{V}'-V'} + U\enc{2V' + r (\dot{U}' - 2\dot{V}' + r\ddot{V}')}}  +\wigred{-1}{-1}{2}\om{l}{0}\om{l'}{0}\om{l}{2}V\encsqr{U'-V'+r\dot{V}'} + \wigred{2}{-1}{-1}\om{l}{0} \om{l'}{0} \om{l'}{2}\encsqr{V\enc{U'-3V'+r\dot{V}'}+2r\dot{V}V'}}  
 \end{dmath}
 
 \begin{dmath}
-\cB_{st}^{00} = \frac{(-1)^{m'}}{2r^2}\gam{l}\gam{l'}\gam{s}\wigred{-m'}{t}{m} \enccrl{-\encsqr{\wigred{-1}{0}{1}+\wigred{1}{0}{-1}}\om{l'}{0}\om{l}{0} \encsqr{V\enc{-4U'+2\enc{1+{\om{l'}{0}}^2} V'+r\enc{\dot{U}'-2\dot{V}'}} +2r\dot{V}\enc{U'-V'+r\dot{V}'}} +
-\wigred{0}{0}{0}\encsqr{ \enc{6U-4{\om{l}{0}}^2 V-2 r \dot{U}} \enc{U'-{\om{l'}{0}}^2V'} + 2{\om{l'}{0}}^2 rU\dot{V}' + r\enc{\enc{-4U+2{\om{l}{0}}^2V+r\dot{U}}}\dot{U}'+rU\ddot{U}' }
+\cB_{st}^{00} = \frac{(-1)^{m'}}{2r^2}\gam{l}\gam{l'}\gam{s}\wigred{-m'}{t}{m} \enc{1+(-1)^{l'+l+s}}\enccrl{\frac{1}{2}\wigred{0}{0}{0}\encsqr{ \enc{6U-4{\om{l}{0}}^2 V-2 r \dot{U}} \enc{U'-{\om{l'}{0}}^2V'} + 2{\om{l'}{0}}^2 rU\dot{V}' + r\enc{\enc{-4U+2{\om{l}{0}}^2V+r\dot{U}}}\dot{U}'+rU\ddot{U}' } -\wigred{-1}{0}{1}\om{l'}{0}\om{l}{0} \encsqr{V\enc{-4U'+2\enc{1+{\om{l'}{0}}^2} V'+r\enc{\dot{U}'-2\dot{V}'}} +2r\dot{V}\enc{U'-V'+r\dot{V}'}}
 } 
 \end{dmath}
 
 \begin{dmath}
-\cB_{st}^{+-} = \frac{(-1)^{m'}}{2r^2}\gam{l}\gam{l'}\gam{s}\wigred{-m'}{t}{m} \enccrl{-2\encsqr{\wigred{-2}{0}{2}+\wigred{2}{0}{-2}} \om{l}{0}\om{l}{2} \om{l'}{0}\om{l'}{2} VV' + \wigred{-1}{0}{1}\om{l'}{0}\om{l}{0}\encsqr{-rV\dot{U}' + U \enc{U'-V'+r\dot{V}'}}}  
+2\cB_{st}^{+-} = \frac{(-1)^{m'}}{r^2}\gam{l}\gam{l'}\gam{s}\wigred{-m'}{t}{m}\enc{1+(-1)^{l'+l+s}} \enccrl{-2\wigred{-2}{0}{2}\om{l}{0}\om{l}{2} \om{l'}{0}\om{l'}{2} VV' + \wigred{-1}{0}{1}\om{l'}{0}\om{l}{0}\encsqr{-rV\dot{U}' + U \enc{U'-V'+r\dot{V}'}} 
++\wigred{0}{0}{0}r^2\encsqr{U\ddot{U}'-\dot{U}\dot{U}'}
+}  
 \end{dmath}
 
 Kernel components $\cB_{st}^{\mu\nu}$ are found to have these following properties.
@@ -70,13 +71,17 @@ Kernel components $\cB_{st}^{\mu\nu}$ are found to have these following properti
 \item $\cB_{st}^{\mu\nu} = \cB_{st}^{\nu\mu}$ (by construction)
 \item $\cB_{st}^{--} = (-1)^{l+l'+s}\cB_{st}^{++}$
 \item $\cB_{st}^{0-} = (-1)^{l+l'+s}\cB_{st}^{+0}$
-\item $\cB_{st}^{00} = \cB_{st}^{+-}=\cB_{st}^{-+}=0$ for odd $l'+l+s$
+\item $\cB_{st}^{00} = \cB_{st}^{+-}=\cB_{st}^{-+}=0$ for odd $\enc{l'+l+s}$
 \end{enumerate}
-
-
+Figure \ref{fig:kern_plot} shows the four independent components of the sensitivity kernel under self coupling for some modes. It is clear from the plots that for all modes, sensitivity is mostly localised to the solar boundary. This effect is most striking for $\cB^{+-}_{st}$ across modes. This is a an indirect consequence of the background density profile of the sun which falls almost exponentially fast with respect to radius towards the outer regions of the sun. The very low density near the boundary makes the eigenfunction peak distinctly near the boundary and as $\cB$ consists of the
+\begin{figure}[ht]
+\includegraphics[scale=0.55,center]{Chapter3/figs/kern_self.eps}
+\caption{Self coupling Kernels for the modes $\mode{4}{3}$, $\mode{1}{10}$, and $\mode{0}{20}$.}
+\label{fig:kern_plot}
+\end{figure}
 
 \section{Synthetic Magnetic Field}
-Using some basic pieces of information about mean solar magnetic field as given in \ref{mag_intro}, we can posit the following form of a synthetic magnetic field which will be used for validating our routine of finding frequency splits. We give the following form of the magnetic field which is comoposed of an internal toroidal field concentrated at the tachocline, and a dipolar field which entends from the tachocline to the surface.
+Using some basic pieces of information about mean solar magnetic field as given in \ref{mag_intro}, we can posit the following form of a synthetic magnetic field which will be used for validating our routine of finding frequency splits. We give the following form of the magnetic field which is comoposed of an internal toroidal field concentrated at the tachocline, and a dipolar field which extends from the tachocline to the surface.
 
 \subsection{Construction of $\Bv$}\label{sec:B_construction}
 Using the identities $\grad_1 Y_l^m = \om{l}{0} \enc{Y_{lm}^{-1} \ev{-} + Y_{lm}^0 \ev{+}}$, $\ev{r} \times\grad_1 Y_l^m = i\om{l}{0} \enc{Y_{lm}^{-1} \ev{-} - Y_{lm}^0 \ev{+}}$, and $Y_1^0(\theta,\phi) = \gam{1}\cos\theta$ we see following things: (1) A toroidal field $\Bv = \alpha(r) \sin\theta \ev{\phi}$ can be given as $B_{10} = i \alpha(r) / \gam{1} \enc{-1,0,1}$ with all other $B_{st}$ components being $0$, and (2) A dipolar field $\Bv = \beta(r) (2\cos\theta \ev{r} + \sin\theta\ev{\theta})$ with $\beta \propto r^{-3}$ can be given as $B_{10} = -\beta(r)/\gam{1} \enc{1,-2,1}$ with all other $B_{st}$ components being $0$. Note that the row vector refers to the GSH coordinate index $\mu$. This leads to the following final form of $\Bv$
@@ -88,9 +93,9 @@ B_{st}(r) =
 0, & \text{for} (s,t) \neq (1,0)
 \end{cases}
 \end{equation}
-where $b(r)=1$ where field is perfectly dipolar. The term $r\dot{b}(r)$ appear as a consequence of fixing the diveregence to zero and is only nonzero in the transition region where $b(r)$ goes from $0$ to $1$. It was can be checked via using $\grad \cdot \Bv = g_{\alpha\beta} (\grad\Bv)^{\alpha\beta}$ (\cite{GSH_repo} was used) that the two parts in (\ref{mag_field}) (toroidal and dipolar) satisfy the solenoidal condition independenlty. We plot the forms of the $\alpha$, $\beta$, and $b$ used in our frequency splitting calculations.
+where $b(r)=1$ where field is perfectly dipolar. The term $r\dot{b}(r)$ appear as a consequence of fixing the diveregence to zero and is only nonzero in the transition region where $b(r)$ goes from $0$ to $1$. It was can be checked via using $\grad \cdot \Bv = g_{\alpha\beta} (\grad\Bv)^{\alpha\beta}$ (\cite{GSH_repo} was used) that the two parts in (\ref{mag_field}) (toroidal and dipolar) satisfy the solenoidal condition independently. We plot the forms of the $\alpha$, $\beta$, and $b$ used in our frequency splitting calculations.
 
-\begin{figure}[h]
+\begin{figure}[t]
 \begin{subfigure}{0.5\linewidth}
 \centering
 \includegraphics[scale=.5]{Chapter3/figs/alpha_beta}
@@ -99,11 +104,11 @@ where $b(r)=1$ where field is perfectly dipolar. The term $r\dot{b}(r)$ appear a
 \end{subfigure}
 \begin{subfigure}{0.5\linewidth}
 \centering
-\includegraphics[scale=0.5]{Chapter3/figs/b}
+\includegraphics[scale=0.5,center]{Chapter3/figs/b}
 \caption{$b$ and $a = b-r\dot{b}$}
 \label{fig:a_b}
 \end{subfigure}
-\caption{$\alpha$ is addition of two Gaussians centred at $r=0$ with peak $10^7 G$ and at $r=0.7R_{\odot}$ with peak $10^5 G$ respectively. $b$ transitions smoothly from $0$ to $1$ as a sigmoid around $r=0.7R_{\odot}$. $r=0.7R_{\odot}$ mark is roughly where the tachocline is placed. Figure \ref{fig:alpha_beta} shows the poloidal (dipolar) field $\beta$ starting to dominate over the toroidal field by atleast three orders of magnitude as $r$ exceeds $\sim 0.8 R_{\odot}$.}
+\caption{$\alpha(r)$ is addition of two Gaussians centred at $r=0$ with peak $10^7 G$ and at $r=0.7R_{\odot}$ with peak $10^5 G$ respectively. $b$ transitions smoothly from $0$ to $1$ as a sigmoid around $r=0.7R_{\odot}$. $r=0.7R_{\odot}$ mark is roughly where the tachocline is placed. Figure \ref{fig:alpha_beta} shows the poloidal (dipolar) field $\beta$ starting to dominate over the toroidal field by atleast three orders of magnitude as $r$ exceeds $\sim 0.8 R_{\odot}$.}
 \end{figure}
 
 \subsection{Construction of $\mathcal{H}$}
@@ -130,7 +135,7 @@ h_{st}^{\mu\nu} = B^{\mu}_{s_0 t_0}B^{\nu}_{s_0 t_0} (-1)^{\mu + \nu + t} (2s_0+
 \end{equation}
 
 For the axis symmetric magnetic field constructed in \ref{sec:B_construction}, we may set $s_0=1$ and $t_0=0$. Wigner 3j selection rules given in \ref{sec:selec_rules} dicate that $\cH$ can only have $s=0,1,2$ and $t=0$. Then we have the form
-
+ 	
 \begin{equation}
 h_{s0}^{\mu\nu} = 3 \gam{s} B^{\mu}_{10}B^{\nu}_{10} (-1)^{\mu + \nu} \wigfull{1}{s}{1}{\mu}{-(\mu+\nu)}{\nu} \wigfull{1}{s}{1}{0}{0}{0}
 \end{equation}

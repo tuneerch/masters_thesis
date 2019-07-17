@@ -7,14 +7,14 @@
 %% Saved with string encoding Unicode (UTF-8) 
 
 @article{schou_pol_94,
-author = {Schou, J and Christensen-Dalsgaard, J and Thompson, Michael},
-year = {1994},
-month = {10},
-pages = {},
-title = {On comparing helioseismic two-dimensional inversion methods},
-volume = {433},
-journal = {The Astrophysical Journal},
-doi = {10.1086/174653}
+    author = {Schou, J and Christensen-Dalsgaard, J and Thompson, Michael},
+    year = {1994},
+    month = {10},
+    pages = {},
+    title = {On comparing helioseismic two-dimensional inversion methods},
+    volume = {433},
+    journal = {The Astrophysical Journal},
+    doi = {10.1086/174653}
 }
 
 @article{benomar18,

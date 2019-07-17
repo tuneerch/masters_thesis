@@ -63,3 +63,27 @@ We work with normalised eigenfunctions $\boldsymbol{\xi}_k$ with the spherically
   \inner{\xiv_{k'}}{\rho\xiv_{k}} = \delta_{n'n} \delta_{l' l} \delta_{m' m}  
 \end{equation}
 where the inner product \inner{}{} stands for $\inner{\Phi}{\Psi} \equiv \ints d^3\rvec \Phi^*(\rvec) \Psi(\rvec)$.
+
+\section{Representation of Splitting Data}
+Since each multiplet $\mode{n}{l}$ contains $2l+1$ singlet modes, it is tedious to give the degree of splitting in the mode by exact value of each split frequency $\omega_{nlm}$ by itself. Therefore, in helioseismology, splitting data is represented by numbers called splitting coefficients which are the coefficients. Frequencies of a split mode $\mode{n}{l}$ is given as 
+\begin{equation}
+\omega_{nlm} = \omega_{nl} + \sum_{j=0}^{j_{max}} a^{nl}_j \cP_j(m)
+\label{eq:a_def}
+\end{equation}
+where $\cP_{j}(m)$ with $j\in \{0,1,2,\ldots, j_{max}\}$ represents a $j_{max}+1$ dimensional orthogonal basis function of polynomials on the discrete space of $m$'s which run from $-l$ to $l$. Since, there are $2l+1$ data points in a particular mode splitting data set ($2l+1$ singlet frequencies), $j_{max}$ cannot exceed $2l$. In practice, $a$-coefficients are recorded till a $j_{max}$We will use, as a standard, the polynomials prescribed in \cite{ritzwoller} which are Gram-Schmidt orthogonalised polynomials of increasing degree starting with $\cP_0(m) = l$. Given the normalisation condition mentioned above, and this starting condition, the polynomials become well defined. A straight forward recipe for obtaining these can be found in Appendix A of \cite{schou_pol_94}. Some properties to note about these polynomials are
+\begin{itemize}
+\item $\cP_j(m)$ is odd/even about $m=0$ if $j$ is odd/even respectively.
+\item $\cP_j(m)$ has polynomial degree $j$ in $m$.
+\item $\cP_j(m)$ contains only odd/even powers of $m$ if $j$ is odd/even respectively.
+\item In limit $l \gg 1$, $\cP_j(m) \approx lP_{j}(m/l)$, where $P_j$ is Legendre polynomial of degree $j$.
+\end{itemize}
+
+Once we have the splitting data $\omega_{nlm}$, one can easily compute the $a$ coefficients multiplying both sides of Eq.(\ref{eq:a_def}) by $\cP_k(m)$,summing over all $m$, and finally using using the orthogonality condition $$\sum_{m=-l}^l \cP_{j}(m) \cP_{k}(m) = \delta_{jk} \sum_{m=-l}^l \enc{\cP_{j}(m)}^2$$
+as
+
+\begin{equation}
+a^{nl}_j = \sum_{m=-l}^l \delta\omega_{nlm}\cP_j(m) \bigg/ \sum_{m=-l}^l \enc{\cP_j(m)}^2
+\end{equation}
+
+
+Note that, even though scaled Legendre polynomials $lP_j(m/l)$ are not perfectly orthogonal on a discretised domain (under the inner product $(A|B)\sum_{m=-l}^l A^*(m)B(m)$), they are still linearly independent. However they're still not a great choice for basis functions to represent splitting data, because value of $a$-coefficients will keep changing depending on maximum value of $j$ being considered during summation over m

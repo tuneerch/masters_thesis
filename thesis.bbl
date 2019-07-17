@@ -35,6 +35,11 @@
   of differential rotation}.
 \newblock {\em \apj}, 369:557--566.
 
+\bibitem[{Schou}, 1999]{schou_data}
+{Schou}, J. (1999).
+\newblock Index of /~schou/anavw72z.
+\newblock url\{http://quake.stanford.edu/~schou/anavw72z/}.
+
 \bibitem[{Schou} et~al., 1998]{schou98}
 {Schou}, J., {Antia}, H.~M., {Basu}, S., {Bogart}, R.~S., {Bush}, R.~I.,
   {Chitre}, S.~M., {Christensen-Dalsgaard}, J., {di Mauro}, M.~P.,
@@ -45,5 +50,10 @@
 \newblock {Helioseismic Studies of Differential Rotation in the Solar Envelope
   by the Solar Oscillations Investigation Using the Michelson Doppler Imager}.
 \newblock {\em \apj}, 505:390--417.
+
+\bibitem[Schou et~al., 1994]{schou_pol_94}
+Schou, J., Christensen-Dalsgaard, J., and Thompson, M. (1994).
+\newblock On comparing helioseismic two-dimensional inversion methods.
+\newblock {\em The Astrophysical Journal}, 433.
 
 \end{thebibliography}

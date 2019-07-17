@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: Dedication/dedication.aux
 A level-1 auxiliary file: Declaration/declaration.aux
 A level-1 auxiliary file: Acknowledgement/acknowledgement.aux
 A level-1 auxiliary file: Abstract/abstract.aux
@@ -16,45 +15,45 @@ A level-1 auxiliary file: Appendix3/appendix3.aux
 A level-1 auxiliary file: Appendix4/appendix4.aux
 Database file #1: references.bib
 Warning--empty publisher in jcd_notes
-You've used 7 entries,
+You've used 9 entries,
             1935 wiz_defined-function locations,
-            528 strings with 5607 characters,
-and the built_in function-call counts, 3112 in all, are:
-= -- 282
-> -- 189
-< -- 6
-+ -- 68
-- -- 68
-* -- 281
-:= -- 566
-add.period$ -- 21
-call.type$ -- 7
-change.case$ -- 68
-chr.to.int$ -- 7
-cite$ -- 8
-duplicate$ -- 94
-empty$ -- 180
-format.name$ -- 83
-if$ -- 587
+            538 strings with 5846 characters,
+and the built_in function-call counts, 3697 in all, are:
+= -- 340
+> -- 214
+< -- 7
++ -- 76
+- -- 76
+* -- 324
+:= -- 680
+add.period$ -- 27
+call.type$ -- 9
+change.case$ -- 82
+chr.to.int$ -- 9
+cite$ -- 10
+duplicate$ -- 117
+empty$ -- 215
+format.name$ -- 93
+if$ -- 695
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 8
-newline$ -- 38
-num.names$ -- 21
-pop$ -- 59
+missing$ -- 9
+newline$ -- 48
+num.names$ -- 27
+pop$ -- 68
 preamble$ -- 1
-purify$ -- 69
+purify$ -- 83
 quote$ -- 0
-skip$ -- 73
+skip$ -- 93
 stack$ -- 0
-substring$ -- 174
-swap$ -- 6
+substring$ -- 198
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 38
+type$ -- 50
 warning$ -- 1
-while$ -- 18
+while$ -- 22
 width$ -- 0
-write$ -- 90
+write$ -- 115
 (There was 1 warning)
