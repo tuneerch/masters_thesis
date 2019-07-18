@@ -47,38 +47,42 @@ Since $h_{st}^{\mu\nu}$ is symmetric in interchange of $\mu$ and $\nu$, we may a
 
 Using the Mathematica package developed for this work \cite{GSH_repo} which automates manipulation of tensor spherical harmonics via the method of GSHs, the following forms of the kernels were found
 
-\begin{dmath}
+\begin{dmath}\label{eq:kern_mm}
 \cB_{st}^{--} = \frac{(-1)^{m'+1}}{r^2}\gam{l}\gam{l'}\gam{s}\wigred{-m'}{t}{m} \enccrl{\wigred{1}{-2}{1}\om{l}{0}\om{l'}{0} \encsqr{\enc{U+{\om{l'}{2}}^2 V}V' - UU'-rV\dot{V}'} +\wigred{2}{-2}{0} \om{l'}{0}\om{l'}{2}\encsqr{(U+r\dot{U})V'-rU\dot{V}'} +\wigred{0}{-2}{2} \om{l}{0}\om{l}{2}rV\dot{U}' + \wigred{3}{-2}{-1} \om{l}{0}\om{l'}{0}\om{l'}{2}\om{l'}{3}VV'}   
 \end{dmath}
 
-\begin{dmath}
+\begin{dmath}\label{eq:kern_0m}
 2\cB_{st}^{0-} = \frac{(-1)^{m'}}{r^2}\gam{l}\gam{l'}\gam{s}\wigred{-m'}{t}{m} \enccrl{\wigred{0}{-1}{1}\om{l}{0}\encsqr{\enc{2U+{\om{l'}{2}}^2 V}U' +{\om{l'}{0}}^2 \enc{-2UV'-VV'+rV\dot{V}'} -r\enc{U+V-r\dot{V}'}\dot{U}'} - \wigred{1}{-1}{0}\om{l'}{0}\encsqr{(-2U+{\om{l}{0}}^2V)U' + {\om{l}{0}}^2V\enc{r\dot{V}'-V'} + U\enc{2V' + r (\dot{U}' - 2\dot{V}' + r\ddot{V}')}}  +\wigred{-1}{-1}{2}\om{l}{0}\om{l'}{0}\om{l}{2}V\encsqr{U'-V'+r\dot{V}'} + \wigred{2}{-1}{-1}\om{l}{0} \om{l'}{0} \om{l'}{2}\encsqr{V\enc{U'-3V'+r\dot{V}'}+2r\dot{V}V'}}  
 \end{dmath}
 
-\begin{dmath}
-\cB_{st}^{00} = \frac{(-1)^{m'}}{2r^2}\gam{l}\gam{l'}\gam{s}\wigred{-m'}{t}{m} \enc{1+(-1)^{l'+l+s}}\enccrl{\frac{1}{2}\wigred{0}{0}{0}\encsqr{ \enc{6U-4{\om{l}{0}}^2 V-2 r \dot{U}} \enc{U'-{\om{l'}{0}}^2V'} + 2{\om{l'}{0}}^2 rU\dot{V}' + r\enc{\enc{-4U+2{\om{l}{0}}^2V+r\dot{U}}}\dot{U}'+rU\ddot{U}' } -\wigred{-1}{0}{1}\om{l'}{0}\om{l}{0} \encsqr{V\enc{-4U'+2\enc{1+{\om{l'}{0}}^2} V'+r\enc{\dot{U}'-2\dot{V}'}} +2r\dot{V}\enc{U'-V'+r\dot{V}'}}
+\begin{dmath}\label{eq:kern_00}
+\cB_{st}^{00} = \frac{(-1)^{m'}}{2r^2}\gam{l}\gam{l'}\gam{s}\wigred{-m'}{t}{m} \enc{1+p}\enccrl{\frac{1}{2}\wigred{0}{0}{0}\encsqr{ \enc{6U-4{\om{l}{0}}^2 V-2 r \dot{U}} \enc{U'-{\om{l'}{0}}^2V'} + 2{\om{l'}{0}}^2 rU\dot{V}' + r\enc{\enc{-4U+2{\om{l}{0}}^2V+r\dot{U}}}\dot{U}'+rU\ddot{U}' } -\wigred{-1}{0}{1}\om{l'}{0}\om{l}{0} \encsqr{V\enc{-4U'+2\enc{1+{\om{l'}{0}}^2} V'+r\enc{\dot{U}'-2\dot{V}'}} +2r\dot{V}\enc{U'-V'+r\dot{V}'}}
 } 
 \end{dmath}
 
-\begin{dmath}
-2\cB_{st}^{+-} = \frac{(-1)^{m'}}{r^2}\gam{l}\gam{l'}\gam{s}\wigred{-m'}{t}{m}\enc{1+(-1)^{l'+l+s}} \enccrl{-2\wigred{-2}{0}{2}\om{l}{0}\om{l}{2} \om{l'}{0}\om{l'}{2} VV' + \wigred{-1}{0}{1}\om{l'}{0}\om{l}{0}\encsqr{-rV\dot{U}' + U \enc{U'-V'+r\dot{V}'}} 
+\begin{dmath}\label{eq:kern_pm}
+2\cB_{st}^{+-} = \frac{(-1)^{m'}}{r^2}\gam{l}\gam{l'}\gam{s}\wigred{-m'}{t}{m}\enc{1+p} \enccrl{-2\wigred{-2}{0}{2}\om{l}{0}\om{l}{2} \om{l'}{0}\om{l'}{2} VV' + \wigred{-1}{0}{1}\om{l'}{0}\om{l}{0}\encsqr{-rV\dot{U}' + U \enc{U'-V'+r\dot{V}'}} 
 +\wigred{0}{0}{0}r^2\encsqr{U\ddot{U}'-\dot{U}\dot{U}'}
 }  
 \end{dmath}
+where $p \equiv (-1)^{l'+l+s}$, $U,V \equiv U_{nl},V_{nl}$, and $U',V' \equiv U_{n'l'},V_{n'l'}$.
 
-Kernel components $\cB_{st}^{\mu\nu}$ are found to have these following properties.
+Kernel components $\cB_{st}^{\mu\nu}$ are found to have these following properties:
 \begin{enumerate}
 \item $\cB_{st}^{\mu\nu} = \cB_{st}^{\nu\mu}$ (by construction)
 \item $\cB_{st}^{--} = (-1)^{l+l'+s}\cB_{st}^{++}$
 \item $\cB_{st}^{0-} = (-1)^{l+l'+s}\cB_{st}^{+0}$
 \item $\cB_{st}^{00} = \cB_{st}^{+-}=\cB_{st}^{-+}=0$ for odd $\enc{l'+l+s}$
 \end{enumerate}
-Figure \ref{fig:kern_plot} shows the four independent components of the sensitivity kernel under self coupling for some modes. It is clear from the plots that for all modes, sensitivity is mostly localised to the solar boundary. This effect is most striking for $\cB^{+-}_{st}$ across modes. This is a an indirect consequence of the background density profile of the sun which falls almost exponentially fast with respect to radius towards the outer regions of the sun. The very low density near the boundary makes the eigenfunction peak distinctly near the boundary and as $\cB$ consists of the
-\begin{figure}[ht]
+
+\begin{figure}[t]
 \includegraphics[scale=0.55,center]{Chapter3/figs/kern_self.eps}
 \caption{Self coupling Kernels for the modes $\mode{4}{3}$, $\mode{1}{10}$, and $\mode{0}{20}$.}
 \label{fig:kern_plot}
 \end{figure}
+
+Figure (\ref{fig:kern_plot}) shows the four independent components of the sensitivity kernel under self coupling for some modes. It is clear from the plots that for all modes, sensitivity is mostly localised to the solar boundary. This effect is most striking for $\cB^{+-}_{st}$ across modes. This is a an indirect consequence of the background density profile of the sun which falls almost exponentially fast with respect to radius towards the outer regions of the sun. The low density near the boundary makes the eigenfunction peak distinctly near the boundary. However, as can be seen in equations (\ref{eq:kern_mm}), (\ref{eq:kern_0m}), (\ref{eq:kern_00}), and (\ref{eq:kern_pm}), the kernels depend quadratically on $U$ and $V$, which finally makes them peak at the boundary. This implies that most of the magnetic splitting caused is due to the fields near the surface and acts as limitation to imaging the interior magnetic precisely via an inversion of frequency splitting data.
+
 
 \section{Synthetic Magnetic Field}
 Using some basic pieces of information about mean solar magnetic field as given in \ref{mag_intro}, we can posit the following form of a synthetic magnetic field which will be used for validating our routine of finding frequency splits. We give the following form of the magnetic field which is comoposed of an internal toroidal field concentrated at the tachocline, and a dipolar field which extends from the tachocline to the surface.
@@ -108,7 +112,7 @@ where $b(r)=1$ where field is perfectly dipolar. The term $r\dot{b}(r)$ appear a
 \caption{$b$ and $a = b-r\dot{b}$}
 \label{fig:a_b}
 \end{subfigure}
-\caption{$\alpha(r)$ is addition of two Gaussians centred at $r=0$ with peak $10^7 G$ and at $r=0.7R_{\odot}$ with peak $10^5 G$ respectively. $b$ transitions smoothly from $0$ to $1$ as a sigmoid around $r=0.7R_{\odot}$. $r=0.7R_{\odot}$ mark is roughly where the tachocline is placed. Figure \ref{fig:alpha_beta} shows the poloidal (dipolar) field $\beta$ starting to dominate over the toroidal field by atleast three orders of magnitude as $r$ exceeds $\sim 0.8 R_{\odot}$.}
+\caption{$\alpha(r)$ is addition of two Gaussians centred at $r=0$ with peak $10^7 G$ and at $r=0.7R_{\odot}$ with peak $10^5 G$ respectively. $b$ transitions smoothly from $0$ to $1$ as a sigmoid around $r=0.7R_{\odot}$. $r=0.7R_{\odot}$ mark is roughly where the tachocline is placed. Figure (\ref{fig:alpha_beta}) shows the poloidal (dipolar) field $\beta$ starting to dominate over the toroidal field by atleast three orders of magnitude as $r$ exceeds $\sim 0.8 R_{\odot}$.}
 \end{figure}
 
 \subsection{Construction of $\mathcal{H}$}

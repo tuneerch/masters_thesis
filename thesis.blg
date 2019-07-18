@@ -11,51 +11,48 @@ A level-1 auxiliary file: Chapter4/chapter4.aux
 The style file: apalike.bst
 A level-1 auxiliary file: Appendix1/appendix1.aux
 A level-1 auxiliary file: Appendix2/appendix2.aux
-A level-1 auxiliary file: Appendix3/appendix3.aux
 A level-1 auxiliary file: Appendix4/appendix4.aux
 Database file #1: references.bib
-Warning--entry type for "schou_data" isn't style-file defined
---line 9 of file references.bib
 Warning--empty publisher in jcd_notes
-You've used 9 entries,
+You've used 11 entries,
             1935 wiz_defined-function locations,
-            537 strings with 5791 characters,
-and the built_in function-call counts, 3688 in all, are:
-= -- 338
-> -- 214
-< -- 7
-+ -- 76
-- -- 76
-* -- 324
-:= -- 678
-add.period$ -- 26
-call.type$ -- 9
-change.case$ -- 82
-chr.to.int$ -- 9
-cite$ -- 10
-duplicate$ -- 117
-empty$ -- 215
-format.name$ -- 93
-if$ -- 693
-int.to.chr$ -- 1
+            547 strings with 6082 characters,
+and the built_in function-call counts, 4326 in all, are:
+= -- 405
+> -- 240
+< -- 9
++ -- 85
+- -- 84
+* -- 368
+:= -- 798
+add.period$ -- 36
+call.type$ -- 11
+change.case$ -- 95
+chr.to.int$ -- 10
+cite$ -- 12
+duplicate$ -- 141
+empty$ -- 253
+format.name$ -- 107
+if$ -- 816
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 9
-newline$ -- 47
-num.names$ -- 27
-pop$ -- 69
+missing$ -- 11
+newline$ -- 61
+num.names$ -- 33
+pop$ -- 78
 preamble$ -- 1
-purify$ -- 83
+purify$ -- 97
 quote$ -- 0
-skip$ -- 93
+skip$ -- 111
 stack$ -- 0
-substring$ -- 198
-swap$ -- 7
+substring$ -- 222
+swap$ -- 8
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 50
+type$ -- 60
 warning$ -- 1
-while$ -- 22
+while$ -- 26
 width$ -- 0
-write$ -- 113
-(There were 2 warnings)
+write$ -- 145
+(There was 1 warning)

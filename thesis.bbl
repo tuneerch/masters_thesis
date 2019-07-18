@@ -1,14 +1,26 @@
 \begin{thebibliography}{}
 
-\bibitem[{Chakraborty} and Das, 2019]{GSH_repo}
-{Chakraborty}, T. and Das, S.~B. (2019).
+\bibitem[{Chakraborty} and Das, 2019a]{main_repo}
+{Chakraborty}, T. and Das, S.~B. (2019a).
+\newblock Main repository for lorentz stress splitting calculation.
+\newblock \url{https://github.com/tuneerch/lorentz_stress_kernel}.
+\newblock Accessed: 2019-07-18.
+
+\bibitem[{Chakraborty} and Das, 2019b]{GSH_repo}
+{Chakraborty}, T. and Das, S.~B. (2019b).
 \newblock Mathematica package for generalised spherical harmonic manipulation.
 \newblock \url{https://github.com/tuneerch/LStress_Mathematica}.
+\newblock Accessed: 2019-07-17.
 
 \bibitem[{Christensen--Dalsgaard}, 2003]{jcd_notes}
 {Christensen--Dalsgaard}, J. (2003).
 \newblock {\em Lecture Notes on Stellar Oscillations}.
 \newblock Fifth edition.
+
+\bibitem[{Dahlen} and {Tromp}, 1998]{DT98}
+{Dahlen}, F.~A. and {Tromp}, J. (1998).
+\newblock {\em {Theoretical Global Seismology}}.
+\newblock {Princeton University Press}.
 
 \bibitem[{Goedbloed} and {Poedts}, 2004]{goedbloed2004}
 {Goedbloed}, J.~P.~H. and {Poedts}, S. (2004).
@@ -38,6 +50,8 @@
 \bibitem[Schou, 1999]{schou_data}
 Schou, J. (1999).
 \newblock Index of /~schou/anavw72z.
+\newblock \url{http://quake.stanford.edu/~schou/anavw72z/?C=M;O=A}.
+\newblock Accessed: 2019-07-17.
 
 \bibitem[{Schou} et~al., 1998]{schou98}
 {Schou}, J., {Antia}, H.~M., {Basu}, S., {Bogart}, R.~S., {Bush}, R.~I.,

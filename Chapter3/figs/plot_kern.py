@@ -34,21 +34,6 @@ npts = 1000
 r_new = np.linspace(np.amin(r),np.amax(r),npts)
 r = r_new
 
-#Bmm *= plot_fac
-#B0m *= plot_fac
-#B00 *= plot_fac
-#Bpm *= plot_fac
-
-#plt.plot(r,Bpm[0,0],'r-',label = '$\mathcal{B}^{+-}$')
-#plt.plot(r,Bmm[0,0],'b-',label = '$\mathcal{B}^{--}$')
-#plt.plot(r,B0m[0,0],'k-',label = '$\mathcal{B}^{0-}$')
-#plt.plot(r,B00[0,0],'g-',label = '$\mathcal{B}^{00}$')
-#plt.grid(True)
-#plt.legend()
-#plt.xlabel('$r/R_{\odot}$')
-#plt.ylabel('$(\mu Hz^2 G^{-2}V_{\odot}^{-1})$')
-#plt.title('Kernels for n,l = (1,60), s = 22, m\'=m=0')
-
 plt.subplot(221)
 plt.plot(r,Bmm1[0,0], label = '('+str(n1)+','+str(l1)+')')
 plt.plot(r,Bmm2[0,0], label = '('+str(n2)+','+str(l2)+')')

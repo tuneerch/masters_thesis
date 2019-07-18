@@ -51,3 +51,13 @@ This matrix element enforces the following selection rules for inter-mode intera
 \item $|l'-l| \leq s \leq l'+l$
 \end{enumerate}
 It should be noted here that even though only sum over odd s is considered, the expression for $T_s$ is general and holds for all $s$. This has been verified independently using the Mathematica packaged developed for the sake of this work. This means as far as self coupling is concerned ($l'=l$), the matrix element vanish for all even s.
+
+\subsubsection{Form of supermatrix $Z_{k'k}$}
+
+It is clear from selection rule (1) in \ref{sec:selec_rules} that $Z_{k'k}$ is going to be a sparse matrix consisting of a diagonal and a number of sub-diagonals (proportional to number of multiplets being considered). Also, as $s$ is always odd, $l-l'$ has to be even for non-zero coupling as consequence of selection rule (2). This influences our choice of modes whose inter-coupling will be studied hereafter. Figure (\ref{fig:coup_mat}) is a visual representation of a typical supermatrix consisting of three multiplets.
+
+\begin{figure}[h]
+\includegraphics[scale=0.6,center]{Chapter2/figs/coup_mat}
+\caption{Visualisation of $\log_{10}|Z_{k'k}|$ in $\mu Hz^2$ for the modes $\mode{0}{11}$, $\mode{0}{13}$, and $\mode{0}{15}$ with frequencies $603.69 \mu Hz$, $641.84\mu Hz$, and $677.55 \mu Hz$ respectively. White spaces correspond to $0$ value. Logarithm scale demonstrates the order of magnitude difference between self-coupling (diagonal elements), and cross-coupling (subdiagonal elements).Also notice that largest elements (yellow) are in the first and third section in the main diagonal. These are large because these frequencies are placed away from $\omref$ which is taken to be mean of the three mode frequencies. The relative weakness of the sub-diagonal terms compared to the main-diagonals is because $l-l'\geq 2$ forces $s\geq 2$ which makes the largest component of differential rotation, i.e. $w_1^0$, unable to couple these modes; $w_3^0$ and $w_5^0$ are one and two orders of magnitude smaller than $w_1^0$ respectively.}  
+\label{fig:coup_mat}
+\end{figure}
