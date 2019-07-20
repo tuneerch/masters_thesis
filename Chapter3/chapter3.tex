@@ -16,7 +16,7 @@ In the presence of background magnetic field $\Bv$, the equation of motion is go
 \begin{align}
     \dLB \boldsymbol{\xi} &= \frac{-1}{4\pi}\boldsymbol{\nabla \cdot} [\Bv\Bv\cdot \boldsymbol{\nabla} \boldsymbol{\xi} + \Bv {\cdot} \boldsymbol{\nabla}\boldsymbol{\xi}\Bv - 2 \Bv\Bv\boldsymbol{\nabla \cdot}\boldsymbol{\xi} - (\boldsymbol{\xi \cdot \nabla} \Bv)\Bv - \Bv(\boldsymbol{\xi \cdot \nabla}\Bv)\notag
     \\& + B^2 \boldsymbol{\nabla \cdot \xi I} - \Bv\Bv :\boldsymbol{\nabla \xi I} + \boldsymbol{\xi \cdot \nabla}\frac{B^2}{2}\boldsymbol{I}] 
-     \label{eqn: mag_pert_op}
+     \label{eqn:dLB}
 \end{align}
 where the $:$ stands for contraction of two second rank tensors ($\mathbf{P}:\mathbf{Q} \equiv P_{ij}Q_{ji} $).
 
@@ -37,7 +37,7 @@ $$\cH = \sum_{st}\sum_{\mu\nu} h_{st}^{\mu\nu}(r) Y^{\mu+\nu}_{st}(\theta,\phi) 
 where the generalised spherical harmonic (GSH) coordinate indices given by Greek symbols run from $-1$ to $+1$.
 It is not very productive to find general expressions relating $\Bv$ components to $\cH$ components. Instead, we'll find special relations pertaining to the kind of magnetic field at hand when necessary. $\cH$ by construction satisfies the symmetry property $h^{\mu\nu}_{st} = h^{\nu\mu}_{st}$ ($\because \cH = \Bv\Bv$), and $\enc{h^{\mu\nu}_{st}}^* = (-1)^t h_{s\bar{t}}^{\bar{\mu}\bar{\nu}}$, where overbars represent negatives, follows from its realness condition.
 
-\subsection{Sensitivity Kernels}
+\subsection{Sensitivity Kernels}\label{sec:mag_kern}
 Coupling matrix element is given as on integral transform over $\cH$ as
 \begin{equation}\label{lor_kernel_intro}
 \LamB_{k'k} = \inner{\xiv_{k'}}{\dLB\xiv_{k}}=\int_0^{R_{\odot}} dr r^2 \sum_{\substack{st \\ \mu\nu}} \cB_{st}^{\mu\nu}(r) h_{st}^{\mu\nu}(r)
@@ -85,7 +85,7 @@ Figure (\ref{fig:kern_plot}) shows the four independent components of the sensit
 
 
 \section{Synthetic Magnetic Field}
-Using some basic pieces of information about mean solar magnetic field as given in \ref{mag_intro}, we can posit the following form of a synthetic magnetic field which will be used for validating our routine of finding frequency splits. We give the following form of the magnetic field which is comoposed of an internal toroidal field concentrated at the tachocline, and a dipolar field which extends from the tachocline to the surface.
+Using some basic pieces of information about mean solar magnetic field as given in \ref{mag_intro}, we can posit the following form of a synthetic magnetic field which will be used for validating our routine of finding frequency splits. We give the following form of the magnetic field which is comoposed of an internal toroidal field concentrated at the core and the tachocline, and a dipolar field which extends from the tachocline to the surface.
 
 \subsection{Construction of $\Bv$}\label{sec:B_construction}
 Using the identities $\grad_1 Y_l^m = \om{l}{0} \enc{Y_{lm}^{-1} \ev{-} + Y_{lm}^0 \ev{+}}$, $\ev{r} \times\grad_1 Y_l^m = i\om{l}{0} \enc{Y_{lm}^{-1} \ev{-} - Y_{lm}^0 \ev{+}}$, and $Y_1^0(\theta,\phi) = \gam{1}\cos\theta$ we see following things: (1) A toroidal field $\Bv = \alpha(r) \sin\theta \ev{\phi}$ can be given as $B_{10} = i \alpha(r) / \gam{1} \enc{-1,0,1}$ with all other $B_{st}$ components being $0$, and (2) A dipolar field $\Bv = \beta(r) (2\cos\theta \ev{r} + \sin\theta\ev{\theta})$ with $\beta \propto r^{-3}$ can be given as $B_{10} = -\beta(r)/\gam{1} \enc{1,-2,1}$ with all other $B_{st}$ components being $0$. Note that the row vector refers to the GSH coordinate index $\mu$. This leads to the following final form of $\Bv$
@@ -103,13 +103,13 @@ where $b(r)=1$ where field is perfectly dipolar. The term $r\dot{b}(r)$ appear a
 \begin{subfigure}{0.5\linewidth}
 \centering
 \includegraphics[scale=.5]{Chapter3/figs/alpha_beta}
-\caption{$\alpha$ and $b * \beta$ in $G$}
+\caption{$\alpha(r)$ and $b(r) \beta(r)$ in $G$}
 \label{fig:alpha_beta}
 \end{subfigure}
 \begin{subfigure}{0.5\linewidth}
 \centering
 \includegraphics[scale=0.5,center]{Chapter3/figs/b}
-\caption{$b$ and $a = b-r\dot{b}$}
+\caption{$b(r)$ and $a(r) = b(r)-r\dot{b}(r)$}
 \label{fig:a_b}
 \end{subfigure}
 \caption{$\alpha(r)$ is addition of two Gaussians centred at $r=0$ with peak $10^7 G$ and at $r=0.7R_{\odot}$ with peak $10^5 G$ respectively. $b$ transitions smoothly from $0$ to $1$ as a sigmoid around $r=0.7R_{\odot}$. $r=0.7R_{\odot}$ mark is roughly where the tachocline is placed. Figure (\ref{fig:alpha_beta}) shows the poloidal (dipolar) field $\beta$ starting to dominate over the toroidal field by atleast three orders of magnitude as $r$ exceeds $\sim 0.8 R_{\odot}$.}

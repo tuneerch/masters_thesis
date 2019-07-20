@@ -1,72 +1,65 @@
-\begin{thebibliography}{}
 
-\bibitem[{Chakraborty} and Das, 2019a]{main_repo}
-{Chakraborty}, T. and Das, S.~B. (2019a).
-\newblock Main repository for lorentz stress splitting calculation.
-\newblock \url{https://github.com/tuneerch/lorentz_stress_kernel}.
-\newblock Accessed: 2019-07-18.
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
-\bibitem[{Chakraborty} and Das, 2019b]{GSH_repo}
-{Chakraborty}, T. and Das, S.~B. (2019b).
-\newblock Mathematica package for generalised spherical harmonic manipulation.
-\newblock \url{https://github.com/tuneerch/LStress_Mathematica}.
-\newblock Accessed: 2019-07-17.
+\bibitem{jcd_notes}
+J.~{Christensen--Dalsgaard}, \emph{Lecture Notes on Stellar Oscillations}.
+  fifth~ed., January, 2003.
 
-\bibitem[{Christensen--Dalsgaard}, 2003]{jcd_notes}
-{Christensen--Dalsgaard}, J. (2003).
-\newblock {\em Lecture Notes on Stellar Oscillations}.
-\newblock Fifth edition.
+\bibitem{ritzwoller}
+M.~H. {Ritzwoller} and E.~M. {Lavely}, \emph{{A unified approach to the
+  helioseismic forward and inverse problems of differential rotation}},
+  \href{https://doi.org/10.1086/169785}{\emph{\apj} {\bfseries 369} (1991)
+  557}.
 
-\bibitem[{Dahlen} and {Tromp}, 1998]{DT98}
-{Dahlen}, F.~A. and {Tromp}, J. (1998).
-\newblock {\em {Theoretical Global Seismology}}.
-\newblock {Princeton University Press}.
+\bibitem{lavely92}
+E.~M. {Lavely} and M.~H. {Ritzwoller}, \emph{{The Effect of Global-Scale,
+  Steady-State Convection and Elastic-Gravitational Asphericities on
+  Helioseismic Oscillations}},
+  \href{https://doi.org/10.1098/rsta.1992.0048}{\emph{Philosophical
+  Transactions of the Royal Society of London Series A} {\bfseries 339} (1992)
+  431}.
 
-\bibitem[{Goedbloed} and {Poedts}, 2004]{goedbloed2004}
-{Goedbloed}, J.~P.~H. and {Poedts}, S. (2004).
-\newblock {\em Principles of Magnetohydrodynamics: with Applications to
-  Laboratory and Astrophysical Plasmas}.
-\newblock Cambridge University Press.
+\bibitem{goedbloed2004}
+J.~P.~H. {Goedbloed} and S.~{Poedts}, \emph{Principles of Magnetohydrodynamics:
+  with Applications to Laboratory and Astrophysical Plasmas}. Cambridge
+  University Press, 2004,
+  \href{https://doi.org/10.2277/0521626072}{10.2277/0521626072}.
 
-\bibitem[{Hanasoge}, 2017]{hanasoge17}
-{Hanasoge}, S.~M. (2017).
-\newblock {Seismic sensitivity of normal-mode coupling to Lorentz stresses in
-  the Sun}.
-\newblock {\em \mnras}, 470:2780--2790.
+\bibitem{schou_data}
+J.~Schou, ``Index of /~schou/anavw72z.''
+  \url{http://quake.stanford.edu/~schou/anavw72z/?C=M;O=A}, 1999.
 
-\bibitem[{Lavely} and {Ritzwoller}, 1992]{lavely92}
-{Lavely}, E.~M. and {Ritzwoller}, M.~H. (1992).
-\newblock {The Effect of Global-Scale, Steady-State Convection and
-  Elastic-Gravitational Asphericities on Helioseismic Oscillations}.
-\newblock {\em Philosophical Transactions of the Royal Society of London Series
-  A}, 339:431--496.
+\bibitem{schou_pol_94}
+J.~Schou, J.~Christensen-Dalsgaard and M.~Thompson, \emph{On comparing
+  helioseismic two-dimensional inversion methods},
+  \href{https://doi.org/10.1086/174653}{\emph{The Astrophysical Journal}
+  {\bfseries 433} (1994) }.
 
-\bibitem[{Ritzwoller} and {Lavely}, 1991]{ritzwoller}
-{Ritzwoller}, M.~H. and {Lavely}, E.~M. (1991).
-\newblock {A unified approach to the helioseismic forward and inverse problems
-  of differential rotation}.
-\newblock {\em \apj}, 369:557--566.
+\bibitem{schou98}
+J.~{Schou}, H.~M. {Antia}, S.~{Basu}, R.~S. {Bogart}, R.~I. {Bush}, S.~M.
+  {Chitre} et~al., \emph{{Helioseismic Studies of Differential Rotation in the
+  Solar Envelope by the Solar Oscillations Investigation Using the Michelson
+  Doppler Imager}}, \href{https://doi.org/10.1086/306146}{\emph{\apj}
+  {\bfseries 505} (1998) 390}.
 
-\bibitem[Schou, 1999]{schou_data}
-Schou, J. (1999).
-\newblock Index of /~schou/anavw72z.
-\newblock \url{http://quake.stanford.edu/~schou/anavw72z/?C=M;O=A}.
-\newblock Accessed: 2019-07-17.
+\bibitem{hanasoge17}
+S.~M. {Hanasoge}, \emph{{Seismic sensitivity of normal-mode coupling to Lorentz
+  stresses in the Sun}},
+  \href{https://doi.org/10.1093/mnras/stx1342}{\emph{\mnras} {\bfseries 470}
+  (2017) 2780} [\href{https://arxiv.org/abs/1705.09431}{{\ttfamily
+  1705.09431}}].
 
-\bibitem[{Schou} et~al., 1998]{schou98}
-{Schou}, J., {Antia}, H.~M., {Basu}, S., {Bogart}, R.~S., {Bush}, R.~I.,
-  {Chitre}, S.~M., {Christensen-Dalsgaard}, J., {di Mauro}, M.~P.,
-  {Dziembowski}, W.~A., {Eff-Darwich}, A., {Gough}, D.~O., {Haber}, D.~A.,
-  {Hoeksema}, J.~T., {Howe}, R., {Korzennik}, S.~G., {Kosovichev}, A.~G.,
-  {Larsen}, R.~M., {Pijpers}, F.~P., {Scherrer}, P.~H., {Sekii}, T., {Tarbell},
-  T.~D., {Title}, A.~M., {Thompson}, M.~J., and {Toomre}, J. (1998).
-\newblock {Helioseismic Studies of Differential Rotation in the Solar Envelope
-  by the Solar Oscillations Investigation Using the Michelson Doppler Imager}.
-\newblock {\em \apj}, 505:390--417.
+\bibitem{GSH_repo}
+T.~{Chakraborty} and S.~B. Das, ``Mathematica package for generalised spherical
+  harmonic manipulation.''
+  \url{https://github.com/tuneerch/LStress_Mathematica}, 2019.
 
-\bibitem[Schou et~al., 1994]{schou_pol_94}
-Schou, J., Christensen-Dalsgaard, J., and Thompson, M. (1994).
-\newblock On comparing helioseismic two-dimensional inversion methods.
-\newblock {\em The Astrophysical Journal}, 433.
+\bibitem{DT98}
+F.~A. {Dahlen} and J.~{Tromp}, \emph{{Theoretical Global Seismology}}.
+  {Princeton University Press}, 1998.
 
-\end{thebibliography}
+\bibitem{main_repo}
+T.~{Chakraborty} and S.~B. Das, ``Main repository for lorentz stress splitting
+  calculation.'' \url{https://github.com/tuneerch/lorentz_stress_kernel}, 2019.
+
+\end{thebibliography}\endgroup

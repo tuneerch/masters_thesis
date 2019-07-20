@@ -801,7 +801,7 @@ wish to left align your text}
 \renewcommand{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else%
 	\hbox{}%
 	\thispagestyle{empty}  % Empty header styles
-	\newpage%
+%	\newpage%
 	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 
 

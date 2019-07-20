@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.1)  9 JUL 2019 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.1)  20 JUL 2019 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -83,19 +83,19 @@ l.995 \Gm@process
 Set a paper type (e.g., `a4paper').
 
 
-Package geometry Warning: `width' results in NEGATIVE (-190.63345pt).
+Package geometry Warning: `width' results in NEGATIVE (-113.811pt).
     `lmargin' or `rmargin' should be shortened in length.
 
 
-Package geometry Warning: `height' results in NEGATIVE (-184.9429pt).
+Package geometry Warning: `height' results in NEGATIVE (-241.84842pt).
     `tmargin' or `bmargin' should be shortened in length.
 
 )
 ! Undefined control sequence.
 <recently read> \setFancyHdr 
                              
-l.9   \setFancyHdr
-                   % To apply fancy header after geometry package is loaded
+l.10   \setFancyHdr
+                    % To apply fancy header after geometry package is loaded
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -103,12 +103,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Extra \fi.
-l.10 \fi
+l.11 \fi
         
 I'm ignoring this; it doesn't match any \if.
 
 ! Undefined control sequence.
-l.25 \ifsetCustomFont
+l.26 \ifsetCustomFont
                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -117,7 +117,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Extra \fi.
-l.42 \fi
+l.43 \fi
         
 I'm ignoring this; it doesn't match any \if.
 
@@ -154,7 +154,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.58 \renewcommand{\figurename}
+l.59 \renewcommand{\figurename}
                                {Fig.} %to support older versions of captions...
 
 Try typing  <return>  to proceed.
@@ -167,7 +167,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.75 \usepackage{
+l.76 \usepackage{
                  subcaption}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -179,7 +179,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.78 \usepackage{
+l.79 \usepackage{
                  booktabs} % For professional looking tables
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -191,13 +191,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 \usepackage{
+l.80 \usepackage{
                  multirow}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.115 \ifuseCustomBib
+l.116 \ifuseCustomBib
                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -235,9 +235,69 @@ If that doesn't work, type  X <return>  to quit.
 
 )
 ! Extra \fi.
-l.123 \fi
+l.124 \fi
          
 I'm ignoring this; it doesn't match any \if.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \usepackage{
+                  bm}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 \usepackage{
+                  xspace}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \usepackage{
+                  breqn}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196 \usepackage[export]{
+                          adjustbox}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.236 \usepackage{
+                  braket}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
 
 )
 ! Emergency stop.
@@ -247,10 +307,10 @@ I'm ignoring this; it doesn't match any \if.
 
  
 Here is how much of TeX's memory you used:
- 1941 strings out of 494880
- 31147 string characters out of 6179602
- 88231 words of memory out of 5000000
- 5334 multiletter control sequences out of 15000+600000
+ 1981 strings out of 494880
+ 31303 string characters out of 6179602
+ 88228 words of memory out of 5000000
+ 5374 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  36i,0n,38p,330b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
