@@ -1,35 +1,39 @@
 \thispagestyle {empty}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}What is global helioseismology?}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Frequency splittings in helioseismology}{1}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Quasi Degenerate Perturbation Theory}{1}{subsection.1.2.1}
-\contentsline {section}{\numberline {1.3}Representation of Splitting Data}{2}{section.1.3}
-\contentsline {chapter}{\numberline {2}The Rotating Sun}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Differential Rotation}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Detection from frequency spectrum}{5}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}QDPT Analysis}{6}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Selecition rules in mode coupling}{6}{subsection.2.2.2}
-\contentsline {subsubsection}{Form of supermatrix $Z_{k'k}$}{7}{section*.5}
-\contentsline {chapter}{\numberline {3}Internal Magnetic Fields}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Solar Magnetic Field}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Equation of Motion}{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}Coupling Matrix}{10}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Lorentz Stress components}{10}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Sensitivity Kernels}{10}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Synthetic Magnetic Field}{13}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Construction of $\mathbf {B}\tmspace +\thinmuskip {.1667em}$}{13}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Construction of $\mathcal {H}$}{13}{subsection.3.4.2}
-\contentsline {chapter}{\numberline {4}Results}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}Frequency Splittings due to Differential Rotation}{16}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Splitting with pure rotation}{16}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Splitting with pure rotation removed}{17}{subsection.4.1.2}
-\contentsline {subsubsection}{QDPT vs DPT with increasing coupling modes}{18}{section*.14}
-\contentsline {section}{\numberline {4.2}Splittings due to Lorentz Stresses}{18}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Detectibility}{20}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Conclusion}{20}{section.4.3}
-\contentsline {chapter}{References}{23}{chapter*.18}
-\contentsline {chapter}{Appendix \numberline {A}Generalised Spherical Harmonics Formalism}{24}{Appendix.a.A}
-\contentsline {section}{\numberline {A.1}Formalism}{24}{section.a.A.1}
-\contentsline {section}{\numberline {A.2}Conventions}{24}{section.a.A.2}
-\contentsline {section}{\numberline {A.3}Spherical triple integral}{25}{section.a.A.3}
-\contentsline {section}{\numberline {A.4}Rotation}{25}{section.a.A.4}
+\contentsline {section}{\numberline {1.1}What is helioseismology?}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Overview}{1}{section.1.2}
+\contentsline {chapter}{\numberline {2}Formalism}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Standard Model and Frequency splittings}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Background equation of motion}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Form of eigenfunction}{4}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Quasi Degenerate Perturbation Theory}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Representation of Splitting Data}{6}{section.2.3}
+\contentsline {chapter}{\numberline {3}The Rotating Sun}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Differential Rotation}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}Detection from frequency spectrum}{8}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}QDPT Analysis}{9}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Selecition rules in mode coupling}{9}{subsection.3.2.2}
+\contentsline {subsubsection}{Form of supermatrix $Z_{k'k}$}{10}{section*.7}
+\contentsline {chapter}{\numberline {4}Internal Magnetic Fields}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Solar Magnetic Field}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}Equation of Motion}{12}{section.4.2}
+\contentsline {section}{\numberline {4.3}Coupling Matrix}{13}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Lorentz Stress components}{13}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Sensitivity Kernels}{13}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Synthetic Magnetic Field}{16}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Construction of $\mathbf {B}\tmspace +\thinmuskip {.1667em}$}{16}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Construction of $\mathcal {H}$}{17}{subsection.4.4.2}
+\contentsline {chapter}{\numberline {5}Results}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Frequency Splittings due to Differential Rotation}{19}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Splitting with pure rotation}{19}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Splitting with pure rotation removed}{20}{subsection.5.1.2}
+\contentsline {subsubsection}{QDPT vs DPT with increasing coupling modes}{21}{section*.16}
+\contentsline {section}{\numberline {5.2}Splittings due to Lorentz Stresses}{21}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Detectibility}{23}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Conclusion}{23}{section.5.3}
+\contentsline {chapter}{References}{26}{chapter*.20}
+\contentsline {chapter}{Appendix \numberline {A}Generalised Spherical Harmonics Formalism}{28}{Appendix.a.A}
+\contentsline {section}{\numberline {A.1}Formalism}{28}{section.a.A.1}
+\contentsline {section}{\numberline {A.2}Conventions}{29}{section.a.A.2}
+\contentsline {section}{\numberline {A.3}Spherical triple integral}{29}{section.a.A.3}
+\contentsline {section}{\numberline {A.4}Rotation}{29}{section.a.A.4}

@@ -200,37 +200,40 @@
 \newcommand\mnras{Monthly Notices of the Royal Astronomical Society}
 \newcommand\aaps{Astronomy \& Astrophysics Supplement Series}
 \newcommand{\snr}{\textsc{snrnmais}\xspace}
-\newcommand{\vrot}{\ensuremath{\mathbf{v}_{rot}}}
-\newcommand{\phicap}{\hat{\pmb{\phi}}}
-\newcommand{\mode}[2]{\ensuremath{_{#1}S_{#2}}}
-\newcommand{\omref}{\ensuremath{\omega_{ref}}}
-\newcommand{\cL}{\ensuremath{\bm{\mathcal{L}}}}
-\newcommand{\dL}{\ensuremath{\delta \cL}}
-\newcommand{\dLd}{\ensuremath{\delta \cL^{dr}}}
-\newcommand{\dLB}{\ensuremath{\delta \cL^{B}}}
-\newcommand{\grad}{\ensuremath{\bm{\nabla}}}
-\newcommand{\Lamdr}{\ensuremath{\Lambda^{\text{dr}}}}
-\newcommand{\LamB}{\ensuremath{\Lambda^{\text{B}}}}
-\newcommand{\inner}[2]{\ensuremath{(#1|#2)}}
-\newcommand{\xiv}{\ensuremath{\bm{\xi}}}
-\newcommand{\ints}{\int_{\odot}}
-\newcommand{\rvec}{\ensuremath{\mathbf{r}}}
-\newcommand{\gam}[1]{\ensuremath{\gamma_{#1}}}
-\newcommand{\oddsum}[1]{\sum_{#1=1,3,5,...}}
-\newcommand{\wigfull}[6]{\bigg(\begin{smallmatrix} #1 & #2 & #3 \\#4 & #5 & #6 \end{smallmatrix}\bigg)}
-\newcommand{\wigred}[3]{\bigg(\begin{smallmatrix} l' & s & l \\ #1 & #2 & #3 \end{smallmatrix}\bigg)}
+\newcommand{\vrot}{\ensuremath{\mathbf{v}_{rot}}\,}
+\newcommand{\phicap}{\hat{\pmb{\phi}}\,}
+\newcommand{\mode}[2]{\ensuremath{_{#1}S_{#2}}\,}
+\newcommand{\omref}{\ensuremath{\omega_{ref}}\,}
+\newcommand{\cL}{\ensuremath{\bm{\mathcal{L}}}\,}
+\newcommand{\dL}{\ensuremath{\delta \cL}\,}
+\newcommand{\dLd}{\ensuremath{\delta \cL^{v}}\,}
+\newcommand{\dLB}{\ensuremath{\delta \cL^{B}}\,}
+\newcommand{\grad}{\ensuremath{\bm{\nabla}}\,}
+\newcommand{\Lamdr}{\ensuremath{\Lambda^{v}}}
+\newcommand{\LamB}{\ensuremath{\Lambda^{B}}}
+\newcommand{\inner}[2]{\ensuremath{(#1|#2)}\,}
+\newcommand{\xiv}{\ensuremath{\bm{\xi}}\,}
+\newcommand{\ints}{\int_{\odot} \,}
+\newcommand{\rvec}{\ensuremath{\mathbf{r}}\,}
+\newcommand{\gam}[1]{\ensuremath{\gamma_{#1}}\,}
+\newcommand{\oddsum}[1]{\sum_{#1=1,3,5,...}\,}
+\newcommand{\wigfull}[6]{\bigg(\begin{smallmatrix} #1 & #2 & #3 \\#4 & #5 & #6 \end{smallmatrix}\bigg)\,}
+\newcommand{\wigred}[3]{\bigg(\begin{smallmatrix} l' & s & l \\ #1 & #2 & #3 \end{smallmatrix}\bigg)\,}
 %\newcommand{\wigred}[3]{\left(\wigfull{l'}{s}{l}{#1}{#2}{#3}}
-\newcommand{\om}[2]{\ensuremath{\Omega_{#1}^{#2}}}
-\newcommand{\enc}[1]{\left( #1 \right)}
-\newcommand{\Bv}{\mathbf{B}}
-\newcommand{\cH}{\bm{\mathcal{H}}}
-\newcommand{\ev}[1]{\hat{\bm{e}}_{#1}}
+\newcommand{\om}[2]{\ensuremath{\Omega_{#1}^{#2}}\,}
+\newcommand{\enc}[1]{\left( #1 \right)\,}
+\newcommand{\Bv}{\mathbf{B}\,}
+\newcommand{\cH}{\bm{\mathcal{H}}\,}
+\newcommand{\ev}[1]{\hat{\bm{e}}_{#1}\,}
 \newcommand{\cB}{\mathcal{B}}
-\newcommand{\enccrl}[1]{\left\{ #1 \right\}}
-\newcommand{\encsqr}[1]{\left[ #1 \right]}
-\newcommand{\gshvec}[3]{\left(\begin{matrix} #1 \\ #2 \\ #3 \end{matrix}\right)}
-\newcommand{\cP}{\mathcal{P}^{(l)}}
-\newcommand{\Yv}{\mathbf{Y}}
+\newcommand{\enccrl}[1]{\left\{ #1 \right\}\,}
+\newcommand{\encsqr}[1]{\left[ #1 \right]\,}
+\newcommand{\gshvec}[3]{\left(\begin{matrix} #1 \\ #2 \\ #3 \end{matrix}\right)\,}
+\newcommand{\cP}{\mathcal{P}^{(l)}\,}
+\newcommand{\Yv}{\mathbf{Y}\,}
+\newcommand{\cK}{\ensuremath{\mathcal{K}}}
+\newcommand{\txiv}{\tilde{\bm{\xi}}}
+\newcommand{\domsq}{\ensuremath{\delta(\omega^{2})}}
 %srijan's
 
 \usepackage{braket}

@@ -1,15 +1,27 @@
 
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
+\bibitem{Kosovichev2011}
+A.~G. Kosovichev, \emph{Advances in Global and Local Helioseismology: An
+  Introductory Review}, pp.~3--84.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2011.
+\newblock 10.1007/978-3-642-19928-8_1.
+
 \bibitem{jcd_notes}
 J.~{Christensen--Dalsgaard}, \emph{Lecture Notes on Stellar Oscillations}.
   fifth~ed., January, 2003.
 
-\bibitem{ritzwoller}
-M.~H. {Ritzwoller} and E.~M. {Lavely}, \emph{{A unified approach to the
-  helioseismic forward and inverse problems of differential rotation}},
-  \href{https://doi.org/10.1086/169785}{\emph{\apj} {\bfseries 369} (1991)
-  557}.
+\bibitem{gizon02}
+L.~{Gizon} and A.~C. {Birch}, \emph{{Time-Distance Helioseismology: The Forward
+  Problem for Random Distributed Sources}},
+  \href{https://doi.org/10.1086/340015}{\emph{\apj} {\bfseries 571} (2002)
+  966}.
+
+\bibitem{goedbloed2004}
+J.~P.~H. {Goedbloed} and S.~{Poedts}, \emph{Principles of Magnetohydrodynamics:
+  with Applications to Laboratory and Astrophysical Plasmas}. Cambridge
+  University Press, 2004,
+  \href{https://doi.org/10.2277/0521626072}{10.2277/0521626072}.
 
 \bibitem{lavely92}
 E.~M. {Lavely} and M.~H. {Ritzwoller}, \emph{{The Effect of Global-Scale,
@@ -19,15 +31,19 @@ E.~M. {Lavely} and M.~H. {Ritzwoller}, \emph{{The Effect of Global-Scale,
   Transactions of the Royal Society of London Series A} {\bfseries 339} (1992)
   431}.
 
-\bibitem{goedbloed2004}
-J.~P.~H. {Goedbloed} and S.~{Poedts}, \emph{Principles of Magnetohydrodynamics:
-  with Applications to Laboratory and Astrophysical Plasmas}. Cambridge
-  University Press, 2004,
-  \href{https://doi.org/10.2277/0521626072}{10.2277/0521626072}.
+\bibitem{DT98}
+F.~A. {Dahlen} and J.~{Tromp}, \emph{{Theoretical Global Seismology}}.
+  {Princeton University Press}, 1998.
 
 \bibitem{schou_data}
 J.~Schou, ``Index of /~schou/anavw72z.''
   \url{http://quake.stanford.edu/~schou/anavw72z/?C=M;O=A}, 1999.
+
+\bibitem{ritzwoller}
+M.~H. {Ritzwoller} and E.~M. {Lavely}, \emph{{A unified approach to the
+  helioseismic forward and inverse problems of differential rotation}},
+  \href{https://doi.org/10.1086/169785}{\emph{\apj} {\bfseries 369} (1991)
+  557}.
 
 \bibitem{schou_pol_94}
 J.~Schou, J.~Christensen-Dalsgaard and M.~Thompson, \emph{On comparing
@@ -42,6 +58,11 @@ J.~{Schou}, H.~M. {Antia}, S.~{Basu}, R.~S. {Bogart}, R.~I. {Bush}, S.~M.
   Doppler Imager}}, \href{https://doi.org/10.1086/306146}{\emph{\apj}
   {\bfseries 505} (1998) 390}.
 
+\bibitem{GSH_repo}
+T.~{Chakraborty} and S.~B. Das, ``Mathematica package for generalised spherical
+  harmonic manipulation.''
+  \url{https://github.com/tuneerch/LStress_Mathematica}, 2019.
+
 \bibitem{hanasoge17}
 S.~M. {Hanasoge}, \emph{{Seismic sensitivity of normal-mode coupling to Lorentz
   stresses in the Sun}},
@@ -49,14 +70,14 @@ S.~M. {Hanasoge}, \emph{{Seismic sensitivity of normal-mode coupling to Lorentz
   (2017) 2780} [\href{https://arxiv.org/abs/1705.09431}{{\ttfamily
   1705.09431}}].
 
-\bibitem{GSH_repo}
-T.~{Chakraborty} and S.~B. Das, ``Mathematica package for generalised spherical
-  harmonic manipulation.''
-  \url{https://github.com/tuneerch/LStress_Mathematica}, 2019.
-
-\bibitem{DT98}
-F.~A. {Dahlen} and J.~{Tromp}, \emph{{Theoretical Global Seismology}}.
-  {Princeton University Press}, 1998.
+\bibitem{phinney_gsh}
+R.~A. Phinney and R.~Burridge, \emph{{Representation of the Elastic -
+  Gravitational Excitation of a Spherical Earth Model by Generalized Spherical
+  Harmonics}},
+  \href{https://doi.org/10.1111/j.1365-246X.1973.tb02407.x}{\emph{Geophysical
+  Journal International} {\bfseries 34} (1973) 451}
+  [\href{https://arxiv.org/abs/http://oup.prod.sis.lan/gji/article-pdf/34/4/451/1912034/34-4-451.pdf}{{\ttfamily
+  http://oup.prod.sis.lan/gji/article-pdf/34/4/451/1912034/34-4-451.pdf}}].
 
 \bibitem{main_repo}
 T.~{Chakraborty} and S.~B. Das, ``Main repository for lorentz stress splitting

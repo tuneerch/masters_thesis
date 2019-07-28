@@ -6,10 +6,14 @@
 
 \section{Solar Magnetic Field}\label{mag_intro}
 
-It is well known through the observation of much surface solar phenomenon like active regions, solar flares, coronal mass ejections etc, that the sun has in its interior, often highly localised, significant magnetic fields. The source of this magetic field is theorised to be a primordial current which started a dynamo process that is kept going at the expense of continous dissipation of energy from the solar bulk (CITE DYNAMO). It is also widely belived however that mean magnetic field throughout the solar bulk is fairly weak. This chapter is devoted to finding a method to observe signature of this magnetic field in the p-mode frequency spectrum.
+It is well known through the observation of much surface solar phenomenon like active regions, solar flares, coronal mass ejections etc, that the sun has in its interior, often highly localised, significant magnetic fields. The source of this magnetic field is theorised to be a primordial current which started a dynamo process that is kept going at the expense of continuous dissipation of energy from the solar bulk. It is also widely believed however that mean magnetic field throughout the solar bulk is fairly weak. This chapter is devoted to finding a method to observe signature of this magnetic field in the p-mode frequency spectrum.
 
-Most of high intensity magnetic activity is limited to the solar surface. The tachocline is believed to contain toroidal fields as high as $10^5 \text{G}$ (CITE TACH). outside the tachocline the magnetic field is believed to be mostly dipolar such that mean surface magnetic field is about $10\text{G}$. Very strong local magnetic fields apart from these are also known to exist, but detection of such fields is outside the scope of this work; here we shall only investigate the effect of \textit{global} fields. It will be shown in this chapter why the method of frequency splittings is not the best way to detect strongly localised magentic fields.
+Most of high intensity magnetic activity is limited to the solar surface. The tachocline is believed to contain toroidal fields as high as $10^5 \text{G}$. outside the tachocline the magnetic field is believed to be mostly dipolar such that mean surface magnetic field is about $10\text{G}$. Very strong time varying local magnetic fields apart from these are also known to exist near the surface, but detection of such time dependent fields is outside the scope of this work; here we shall only investigate the effects of steady fields.
 
+%cite for tachocline B field
+%cite for fairly weak B field
+%cite for core B field
+%cite for dynamo
 \section{Equation of Motion}
 
 In the presence of background magnetic field $\Bv$, the equation of motion is governed by the new operator $\cL \rightarrow \cL + \dL^{B}$, where $\dL^B$ is estabished in \cite{hanasoge17} as below.
@@ -20,22 +24,20 @@ In the presence of background magnetic field $\Bv$, the equation of motion is go
 \end{align}
 where the $:$ stands for contraction of two second rank tensors ($\mathbf{P}:\mathbf{Q} \equiv P_{ij}Q_{ji} $).
 
-Note that in above expression $\Bv$ only appears in the second order. This is a consequence of the induction equation where the Lagrangian displacement field $\xiv$ creates a current $\mathbf{j} \propto \xiv \times \Bv$ and this current interacts with magnetic field as $\mathbf{j} \times \Bv$ to give rise to acceleration. \cite{goedbloed2004} contains a detailed derivation of this and a proof of self adjointedness for $\dL^B$.
+Note that in above expression $\Bv$ only appears in the second order. \cite{goedbloed2004} contains a detailed derivation of this and a proof of self adjointedness for $\dL^B$.
 
 This expression can be put in a more convenient form involving the Lorentz stress tensor $\cH \equiv \Bv\Bv$ as
 \begin{equation} \label{eqn: mag_pert_H}
     \dLB \boldsymbol{\xi} = \frac{-1}{4\pi}\boldsymbol{\nabla\cdot} [\boldsymbol{\mathcal{H}\cdot\nabla \xi} + (\boldsymbol{\nabla \xi})^T \boldsymbol{\cdot \mathcal{H}} - 2\boldsymbol{\mathcal{H}\nabla \cdot \xi} - \boldsymbol{\xi \cdot \nabla \mathcal{H}} + \boldsymbol{\mathcal{H}:I \nabla \cdot \xi I} - \cH{:}\boldsymbol{\nabla \xi I} + \boldsymbol{\xi \cdot \nabla} \enc{\frac{\cH{:}\boldsymbol{I}}{2}}\boldsymbol{I}]
 \end{equation}
 
-The tensor $\cH$ is the quantity of interest in this problem and any inversion algorithm must first invert splitting data for its components. It remains unclear if the magnetic field can be recovered from just the knowldge of components of $\cH$.
-
 \section{Coupling Matrix}
 \subsection{Lorentz Stress components}\label{sec:lorentz_stress_comps}
-The process of taking integrals over a sphere becomes simplified if we're operating in the Generalised Sopherical Harmonics formalism. In this formalism (look at \ref{app_gsh} for basis of this formalism), magnetic field and Lorentz stress are decomposed as
+The process of taking integrals over a sphere becomes simplified if we're operating in the Generalised Spherical Harmonics formalism. In this formalism (Appendix \ref{app_gsh}), magnetic field and Lorentz stress are decomposed as
 $$\Bv = \sum_{st}\sum_{\alpha} B^{\alpha}_{st}(r) Y_{st}^{\alpha}(\theta,\phi) \ev{\alpha}$$
 $$\cH = \sum_{st}\sum_{\mu\nu} h_{st}^{\mu\nu}(r) Y^{\mu+\nu}_{st}(\theta,\phi) \ev{\mu}\ev{\nu}$$
 where the generalised spherical harmonic (GSH) coordinate indices given by Greek symbols run from $-1$ to $+1$.
-It is not very productive to find general expressions relating $\Bv$ components to $\cH$ components. Instead, we'll find special relations pertaining to the kind of magnetic field at hand when necessary. $\cH$ by construction satisfies the symmetry property $h^{\mu\nu}_{st} = h^{\nu\mu}_{st}$ ($\because \cH = \Bv\Bv$), and $\enc{h^{\mu\nu}_{st}}^* = (-1)^t h_{s\bar{t}}^{\bar{\mu}\bar{\nu}}$, where overbars represent negatives, follows from its realness condition.
+Equation (\ref{eqn:h_B_relation}) relates the components of $\cH$ to $\Bv$. $\cH$ by construction satisfies the symmetry property $h^{\mu\nu}_{st} = h^{\nu\mu}_{st}$ ($\because \cH = \Bv\Bv$), and $\enc{h^{\mu\nu}_{st}}^* = (-1)^t h_{s\bar{t}}^{\bar{\mu}\bar{\nu}}$, where overbars represent negatives, follows from its realness condition.
 
 \subsection{Sensitivity Kernels}\label{sec:mag_kern}
 Coupling matrix element is given as on integral transform over $\cH$ as
@@ -66,7 +68,7 @@ Using the Mathematica package developed for this work \cite{GSH_repo} which auto
 }  
 \end{dmath}
 where $p \equiv (-1)^{l'+l+s}$, $U,V \equiv U_{nl},V_{nl}$, and $U',V' \equiv U_{n'l'},V_{n'l'}$.
-
+\clearpage
 Kernel components $\cB_{st}^{\mu\nu}$ are found to have these following properties:
 \begin{enumerate}
 \item $\cB_{st}^{\mu\nu} = \cB_{st}^{\nu\mu}$ (by construction)
@@ -81,8 +83,9 @@ Kernel components $\cB_{st}^{\mu\nu}$ are found to have these following properti
 \label{fig:kern_plot}
 \end{figure}
 
-Figure (\ref{fig:kern_plot}) shows the four independent components of the sensitivity kernel under self coupling for some modes. It is clear from the plots that for all modes, sensitivity is mostly localised to the solar boundary. This effect is most striking for $\cB^{+-}_{st}$ across modes. This is a an indirect consequence of the background density profile of the sun which falls almost exponentially fast with respect to radius towards the outer regions of the sun. The low density near the boundary makes the eigenfunction peak distinctly near the boundary. However, as can be seen in equations (\ref{eq:kern_mm}), (\ref{eq:kern_0m}), (\ref{eq:kern_00}), and (\ref{eq:kern_pm}), the kernels depend quadratically on $U$ and $V$, which finally makes them peak at the boundary. This implies that most of the magnetic splitting caused is due to the fields near the surface and acts as limitation to imaging the interior magnetic precisely via an inversion of frequency splitting data.
+Figure (\ref{fig:kern_plot}) shows the four independent components of the sensitivity kernel under self coupling for some modes. It is clear from the plots that for all modes, sensitivity is mostly localised to the solar boundary. This effect is most striking for $\cB^{+-}_{st}$ across modes. This is a an indirect consequence of the background density profile of the sun which falls almost exponentially fast with respect to radius towards the outer regions of the sun. The low density near the boundary makes the eigenfunction peak distinctly near the boundary. However, as can be seen in equations (\ref{eq:kern_mm}) - (\ref{eq:kern_pm}), the kernels depend quadratically on $U$ and $V$, which finally makes them peak at the boundary. This implies that most of the magnetic splitting caused is due to the fields near the surface and acts as limitation to imaging the interior magnetic precisely via an inversion of frequency splitting data.
 
+We can see that how it is ultimately the components of $\cH$ that couple with the sensitivity kernel; components of $\Bv$ cannot be related to frequency splittings in a straightforward manner like equation (\ref{lor_kernel_intro}). Hence, any procedure inverting splitting data will first determine the $\cH$ components. It remains unclear if the magnetic field can be recovered from just the knowledge of components of $\cH$.
 
 \section{Synthetic Magnetic Field}
 Using some basic pieces of information about mean solar magnetic field as given in \ref{mag_intro}, we can posit the following form of a synthetic magnetic field which will be used for validating our routine of finding frequency splits. We give the following form of the magnetic field which is comoposed of an internal toroidal field concentrated at the core and the tachocline, and a dipolar field which extends from the tachocline to the surface.
@@ -131,8 +134,9 @@ and the triple integral result
 one can write
 \begin{equation}
 h^{\mu\nu}_{st} = \sum_{\substack{s_1t_1\\ s_2t_2}} \langle Y_{st}^{\mu+\nu}, Y_{s_1 t_1}^{\mu}  Y_{s_2 t_2}^{\nu}\rangle B_{s_1t_1}^{\mu} B_{s_2t_2}^{\nu}
+\label{eqn:h_B_relation}
 \end{equation}
-Where $\langle Y_{l_1m_1}^{n_1}, Y_{l_2m_2}^{N_2}  Y_{l_3m_3}^{N_3}\rangle$ stands for the integral in eq(\ref{eq:triple_integral}).
+Where $\langle Y_{l_1m_1}^{n_1}, Y_{l_2m_2}^{N_2}  Y_{l_3m_3}^{N_3}\rangle$ stands for the integral in equation (\ref{eq:triple_integral}).
 If $\Bv$ has only $s=s_0$ and $t=t_0$ features, that is $\Bv = \sum_{\alpha}B_{s_0t_0}^{\alpha}Y_{s_0t_0}^{\alpha} \ev{\alpha}$, components of $\cH$ are given by
 \begin{equation}\label{eq:single_feature_B}
 h_{st}^{\mu\nu} = B^{\mu}_{s_0 t_0}B^{\nu}_{s_0 t_0} (-1)^{\mu + \nu + t} (2s_0+1) \gam{s} \wigfull{s_0}{s}{s_0}{\mu}{-(\mu+\nu)}{\nu} \wigfull{s_0}{s}{s_0}{t_0}{-t}{t_0}
