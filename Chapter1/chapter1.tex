@@ -37,9 +37,9 @@ The standard solar model assumed in this work is that of a spherically symmetric
 \end{equation}
 
 
-where $\omega$ denotes the temporal frequency of the oscillation, $c(r)$ is the sound speed profile, $-g(r)\ev{r}$ is the graviational field, $\rho(r)$ is mass density and $\ev{r}$ is the radial unit vector. For all ensuing calculations and derivations we write equation (\ref{eqn:sol_wave_eqn}) in the form $\mathcal{L}_0 \boldsymbol{\xi} = \rho \omega^2 \boldsymbol{\xi}$ which is to be understood as an eigenvalue equation with the eigenvalue $\omega^2$. It can be shown that the unperturbed wave operator $\mathcal{L}_0$ is self-adjoint \cite{goedbloed2004}. Flow fields, rotations, asphericities, anisotropies and non-radial variations in $c, g, \rho$ can be captured as perturbation terms in equation (\ref{eqn:sol_wave_eqn}). Although for the purpose of this study, we shall restrict ourselves to perturbations induced via presence of an axisymmetric flow (differential rotation) global scale magnetic fields only.
+where $\omega$ denotes the temporal frequency of the oscillation, $c(r)$ is the sound speed profile, $-g(r)\ev{r}$ is the graviational field, $\rho(r)$ is mass density and $\ev{r}$ is the radial unit vector. For all ensuing calculations and derivations we write equation (\ref{eqn:sol_wave_eqn}) in the form $\cL_0 \boldsymbol{\xi} = \rho \omega^2 \boldsymbol{\xi}$ which is to be understood as an eigenvalue equation with the eigenvalue $\omega^2$. It can be shown that the unperturbed wave operator $\mathcal{L}_0$ is self-adjoint \cite{goedbloed2004}. Flow fields, rotations, asphericities, anisotropies and non-radial variations in $c, g, \rho$ can be captured as perturbation terms in equation (\ref{eqn:sol_wave_eqn}). Although for the purpose of this study, we shall restrict ourselves to perturbations induced via presence of an axisymmetric flow (differential rotation) and global scale magnetic fields only.
 
-Since the operator $\cL_0$ is self-adjoint, it has a complete set of eigenfunctions and corrrespoding quantised set of eigenfrequencies. These eigenfunctions and corresponding eigenfrequencies are called \textit{normal modes} and \textit{resonant frequencies} respectively. After decomposing the displacement field $\xiv$ into vector spherical harmonics it can be shown that eigenfunctions are characterised by three quantum numbers known as the radial order $n$, harmonic degree $l$ and azimuthal order $m$. The eigenvalue equation in then given by
+Since the operator $\cL_0$ is self-adjoint, it has a complete set of eigenfunctions and corrrespoding quantised set of eigenfrequencies. These eigenfunctions and corresponding eigenfrequencies are called \textit{normal modes} and \textit{resonant frequencies} respectively. After decomposing the displacement field $\xiv$ into vector spherical harmonics it can be shown that eigenfunctions are characterised by three quantum numbers known as the radial order $n$, harmonic degree $l$ and azimuthal order $m$. The eigenvalue equation is then given by
 
 \begin{equation}
 \cL_{0}\xiv_{nlm} = \rho \omega_{nl}^2 \xiv_{nlm}
@@ -52,7 +52,7 @@ A vector spherical harmonic decomposition of a vector field $\mathbf{A}(\rvec)$ 
 \begin{equation}
 \mathbf{A}(\rvec) = \sum_{lm} \encsqr{U_{lm}(r) Y_l^m \ev{r} + V_{lm}(r) \grad_{1}Y_l^m + W_{lm}(r) \ev{r} \times \grad_1 Y_{l}^{m}}
 \end{equation}
-where $\boldsymbol{r} = (r,\theta,\phi)$ in spherical polar coordinate system with basis vectors $(\ev{r},\ev{\theta},\ev{\phi})$, $\grad_1 \equiv = \enc{\ev{\theta}\partial_{\theta} + \ev{\phi}\frac{1}{\sin\theta}\partial_{\phi} }$. Here, the first two parts involving $U_{ml}$ and $V_{lm}$ constitute the \textit{spheroidal} (or poloidal) component and the last part is constitutes the \textit{toroidal} component. Note that the spheroidal component has zero curl (irrotational) and the toroidal part has zero divergence (solenoidal).
+where $\boldsymbol{r} = (r,\theta,\phi)$ in spherical polar coordinate system with basis vectors $(\ev{r},\ev{\theta},\ev{\phi})$, $\grad_1 \equiv \enc{\ev{\theta}\partial_{\theta} + \ev{\phi}\frac{1}{\sin\theta}\partial_{\phi} }$. Here, the first two parts involving $U_{lm}$ and $V_{lm}$ constitute the \textit{spheroidal} (or poloidal) component and the last part is constitutes the \textit{toroidal} component. Note that the spheroidal component has zero curl (irrotational) and the toroidal part has zero divergence (solenoidal).
 
 Since the sun is essentially a fluid system, it is capable of offering restoring stress in response (and in proportion) to \textit{shear strain rate} (shearing viscosity) but no restoring stress in response to \textit{shear strain}, unlike the earth. This leads to the solar eigenfunctions lacking a toroidal component ($\ev{r}\times \grad_1 Y_{l}^m$) \cite{jcd_notes}. Hence, they have the form
 \begin{eqnarray} \label{eqn: xi_exp}
@@ -67,7 +67,7 @@ We work with normalised eigenfunctions $\boldsymbol{\xi}_k$ with the spherically
 \begin{equation} \label{eqn: orthonormality}
   \inner{\xiv_{k'}}{\rho\xiv_{k}} = \delta_{n'n} \delta_{l' l} \delta_{m' m}  
 \end{equation}
-where $k = (n,l,m)$, and the inner product \inner{}{} stands for $\inner{\Phi}{\Psi} \equiv \ints d^3\rvec \Phi^*(\rvec)\cdot \Psi(\rvec)$.
+where $k = (n,l,m)$, and the inner product \inner{}{} stands for $\inner{\Phi}{\Psi} \equiv \ints d^3\rvec \, \Phi^*(\rvec)\cdot \Psi(\rvec)$.
 
 \section{Quasi Degenerate Perturbation Theory}
 Quasi-degenerate perturbation theory (QDPT) requires us to account for mixing of modes which lie in a small neighbourhood on the frequency spectrum, and hence satisfy the quasi-degenerate condition
@@ -100,18 +100,18 @@ Z_{k'k} \equiv \inner{\xiv_{k'}}{\dL\xiv_{k}} - \delta_{k'k} (\omref^2 - \omega_
 \end{equation}
 We can see that the leading order correction in eigenfrequency is given by the eigenvalues to the supermatrix $Z_{k'k}$ in equation (\ref{eqn:qdpt_eig}). We also find that $\txiv$ can be recovered as its decomposition coefficients in $\cK$ space is described by the eigenvectors of the supermatrix.
 
-Note: The quantity $\inner{\xiv_{k'}}{\dL\xiv{k}}$ will be referred to as the coupling matrix $\Lambda_{k'k}$ throughout this work to reduce notational burden.
+Note: The quantity $\inner{\xiv_{k'}}{\dL\xiv_{k}}$ will be referred to as the coupling matrix $\Lambda_{k'k}$ throughout this work to reduce notational burden.
 
 Finally, as a corollary of the theory developed above, let us consider the case of $\cK$ consisting of modes that are all degenerate with frequency $\omega_0$. In this case, setting $\omref = \omega_0$, we see that $Z_{k'k}$ reduces to $\Lambda_{k'k}$. Now the leading order corrections to eigenfrequency and eigenfunction are described by eigenvalue and eigenvectors of $\Lambda_{k'k}$; this is known as degenerate perturbation theory (DPT). A more detailed version of this analysis can be found in \cite{lavely92}.
 
 
 \section{Representation of Splitting Data}
-Since each multiplet $\mode{n}{l}$ contains $2l+1$ singlet modes, it is tedious to give the degree of splitting in the mode by exact value of each split frequency $\omega_{nlm}$ by itself. Therefore, in helioseismology, splitting data is represented by numbers called splitting coefficients which describe the decomposition of $\delta\omega_{nlm} = \omega_{nlm}-\omega_{nl}$ in terms of some basis function over $m$ as follows
+Since each multiplet $\mode{n}{l}$ contains $2l+1$ singlet modes, it is tedious to give the degree of splitting in the mode by exact value of each split frequency $\omega_{nlm}$ by itself. Therefore in helioseismology, splitting data is represented by numbers called splitting coefficients which describe the decomposition of $\delta\omega_{nlm} = \omega_{nlm}-\omega_{nl}$ in terms of some basis function over $m$ as follows
 \begin{equation}
 \omega_{nlm} = \omega_{nl} + \sum_{j=0}^{j_{max}} a^{nl}_j \cP_j(m)
 \label{eq:a_def}
 \end{equation}
-where $\cP_{j}(m)$ with $j\in \{0,1,2,\ldots, j_{max}\}$ represents a $j_{max}+1$ dimensional orthogonal basis function of polynomials on the discrete space of $m$'s which run from $-l$ to $l$. Since, there are $2l+1$ points in this discrete domain, the (vector) space spanned by all functions on this domain is $(2l+1)$ dimensional, which in turn means $j_{max}$ cannot exceed $2l$. In practice, $a$-coefficients are recorded till a $j_{max}$ of $10$ (\cite{schou_data} for instace). We will use, as a standard, the basis functions prescribed in \cite{ritzwoller} which are Gram-Schmidt orthogonalised polynomials of increasing degree starting with $\cP_0(m) = l$. Given the normalisation condition mentioned above, and this starting condition, the polynomials become well defined. A recipe for obtaining these can be found in Appendix A of \cite{schou_pol_94}. Some properties to note about these polynomials are
+where $\cP_{j}(m)$ with $j\in \{0,1,2,\ldots, j_{max}\}$ represents a $j_{max}+1$ dimensional orthogonal basis function of polynomials on the discrete space of $m$'s which run from $-l$ to $l$. Since, there are $2l+1$ points in this discrete domain, the (vector) space spanned by all functions on this domain is $(2l+1)$ dimensional, which in turn means $j_{max}$ cannot exceed $2l$. In practice, $a$-coefficients are recorded till a $j_{max}$ of $10$ (\cite{schou_data} for instance). We will use, as a standard, the basis functions prescribed in \cite{ritzwoller} which are Gram-Schmidt orthogonalised polynomials of increasing degree starting with $\cP_0(m) = l$. Given the normalisation condition mentioned above, and this starting condition, the polynomials become well defined. A recipe for obtaining these can be found in Appendix A of \cite{schou_pol_94}. Some properties to note about these polynomials are
 \begin{itemize}
 \item $\cP_j(m)$ is odd/even about $m=0$ if $j$ is odd/even respectively.
 \item $\cP_j(m)$ has polynomial degree $j$ in $m$.
@@ -119,7 +119,7 @@ where $\cP_{j}(m)$ with $j\in \{0,1,2,\ldots, j_{max}\}$ represents a $j_{max}+1
 \item In limit $l \gg 1$, $\cP_j(m) \approx lP_{j}(m/l)$, where $P_j$ is Legendre polynomial of degree $j$.
 \end{itemize}
 
-Once we have the splitting data $\omega_{nlm}$, one can easily compute the $a$ coefficients multiplying both sides of Eq.(\ref{eq:a_def}) by $\cP_k(m)$,summing over all $m$, and finally using using the orthogonality condition $$\sum_{m=-l}^l \cP_{j}(m) \cP_{k}(m) = \delta_{jk} \sum_{m=-l}^l \enc{\cP_{j}(m)}^2$$
+Once we have the splitting data $\omega_{nlm}$, one can easily compute the $a$-coefficients multiplying both sides of Eq.(\ref{eq:a_def}) by $\cP_k(m)$,summing over all $m$, and finally using using the orthogonality condition $$\sum_{m=-l}^l \cP_{j}(m) \cP_{k}(m) = \delta_{jk} \sum_{m=-l}^l \enc{\cP_{j}(m)}^2$$
 as
 
 \begin{equation}
@@ -127,14 +127,17 @@ a^{nl}_j = \sum_{m=-l}^l \delta\omega_{nlm}\cP_j(m) \bigg/ \sum_{m=-l}^l \enc{\c
 \end{equation}
 
 
-Note that, even though scaled Legendre polynomials $lP_j(m/l)$ are not perfectly orthogonal on a discretised domain (under the inner product $(A|B)\sum_{m=-l}^l A^*(m)B(m)$), they are still linearly independent. However their use should be avoided as a basis to represent splitting data because value of $a$-coefficients will change slightly depending on $j_{max}$, i.e. how many $a$ coefficients are being fitted to the data; this occurs due to non-zero inner product between different basis functions. An orthogonal basis like $\cP_j$ solves this issue by making $a_j$ values independent of $j_{max}$.
+Note that, even though scaled Legendre polynomials $lP_j(m/l)$ are not perfectly orthogonal on a discretised domain (under the inner product $(A|B)\equiv\sum_{m=-l}^l A^*(m)B(m)$), they are still linearly independent. However their use should be avoided as a basis to represent splitting data because value of $a$-coefficients will change slightly depending on $j_{max}$, i.e. how many $a$-coefficients are being fitted to the data; this occurs due to non-zero inner product between different basis functions. An orthogonal basis like $\cP_j$ solves this issue by making $a_j$ values independent of $j_{max}$.
 
-Thus, henceforth whenever `$a$-coefficients' are referred to in this text, it shall be understood that the underlying basis functions are given by $\{\cP_j: j\in \{0,1,\dots,j_{max}\}\}$. The first three $\cP$s are given below.
+Thus, when `$a$-coefficients' are referred to in this text henceforth, it shall be understood that the underlying basis functions are given by $\{\cP_j: j\in \{0,1,\dots,j_{max}\}\}$. The first six $\cP$'s are given below.
 
 \begin{align}
 \cP_{0}(m) &= l \\
 \cP_1(m) &= m \\
-\cP_2(m) &= \frac{3m^2-l(l+1)}{2l-1}
+\cP_2(m) &= \frac{3m^2-l(l+1)}{2l-1} \\
+\cP_3(m) &= \frac{5m^3-3ml^2}{2l^2} \\
+\cP_4(m) &= \frac{105m^4 - 90m^2 l^2 + \enc{9l^4 -12l^3 -14l^2+ 7l}}{(2l-1)(12l^2-7)} \\
+\cP_5(m) &= \frac{63m^5 - 70m^3l^2 + 15ml^4}{8l^4}
 \end{align}
 
 Figure (\ref{fig:curly_p}) shows that $\cP_j(m)$ bear close resemblance with scaled Legendre polynomials $lP(m/l)$.
