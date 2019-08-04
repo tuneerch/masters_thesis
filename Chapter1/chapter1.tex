@@ -127,7 +127,7 @@ a^{nl}_j = \sum_{m=-l}^l \delta\omega_{nlm}\cP_j(m) \bigg/ \sum_{m=-l}^l \enc{\c
 \end{equation}
 
 
-Note that, even though scaled Legendre polynomials $lP_j(m/l)$ are not perfectly orthogonal on a discretised domain (under the inner product $(A|B)\equiv\sum_{m=-l}^l A^*(m)B(m)$), they are still linearly independent. However their use should be avoided as a basis to represent splitting data because value of $a$-coefficients will change slightly depending on $j_{max}$, i.e. how many $a$-coefficients are being fitted to the data; this occurs due to non-zero inner product between different basis functions. An orthogonal basis like $\cP_j$ solves this issue by making $a_j$ values independent of $j_{max}$.
+Note that even though scaled Legendre polynomials $lP_j(m/l)$ are not perfectly orthogonal on a discretised domain (under the inner product $(A|B)\equiv\sum_{m=-l}^l A^*(m)B(m)$), they are still linearly independent. However their use should be avoided as a basis to represent splitting data because value of $a$-coefficients will change slightly depending on $j_{max}$, i.e. how many $a$-coefficients are being fitted to the data; this occurs due to non-zero inner product between different basis functions. An orthogonal basis like $\cP_j$ solves this issue by making $a_j$ values independent of $j_{max}$.
 
 Thus, when `$a$-coefficients' are referred to in this text henceforth, it shall be understood that the underlying basis functions are given by $\{\cP_j: j\in \{0,1,\dots,j_{max}\}\}$. The first six $\cP$'s are given below.
 
